@@ -33,7 +33,7 @@ public class bitvector2image {
 						//Min 0, MAX 42908
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = (float)xValue/(float)42908;
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[0] = 1;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -44,7 +44,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[0] = 0;
 							sbits[1] = 1;
 							sbits[2] = 0;
@@ -55,7 +55,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 1;
@@ -66,7 +66,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <= 0.4) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -77,7 +77,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <= 0.5) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -88,7 +88,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <= 0.6) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -99,7 +99,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <= 0.7) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -110,7 +110,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <= 0.8) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -121,7 +121,7 @@ public class bitvector2image {
 							sbits[7] = 1;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <= 0.9) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -132,7 +132,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 1;
 							sbits[9] = 0;
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
