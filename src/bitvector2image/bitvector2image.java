@@ -20,7 +20,7 @@ public class bitvector2image {
 			int linenumber = 1;
 			
 			//while (linenumber<125973) {
-			while (linenumber < 1000) {
+			while (linenumber < 125973) {
 				int sbits[] = new int[512]; //464
 				for(int i = 464;i<512;i++) {
 					sbits[i] = 0;
@@ -66,7 +66,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX > 0.3 && newX <= 0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -77,7 +77,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX > 0.4 && newX <= 0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -88,7 +88,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX > 0.5 && newX <= 0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -99,7 +99,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX > 0.6 && newX <= 0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -110,7 +110,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX > 0.7 && newX <= 0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -121,7 +121,7 @@ public class bitvector2image {
 							sbits[7] = 1;
 							sbits[8] = 0;
 							sbits[9] = 0;
-						}else if(newX > 0.8 && newX <= 0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -132,7 +132,7 @@ public class bitvector2image {
 							sbits[7] = 0;
 							sbits[8] = 1;
 							sbits[9] = 0;
-						}else if(newX > 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[0] = 0;
 							sbits[1] = 0;
 							sbits[2] = 0;
@@ -145,7 +145,7 @@ public class bitvector2image {
 							sbits[9] = 1;
 						}
 						else {
-							System.out.println("Error");
+							System.out.println("Error0");
 							System.exit(0);
 						}
 					}
@@ -163,7 +163,7 @@ public class bitvector2image {
 							sbits[11] = 0;
 							sbits[12] = 1;
 						}else {
-							System.out.println("Error");
+							System.out.println("Error1");
 							System.exit(0);
 						}
 					}
@@ -403,7 +403,7 @@ public class bitvector2image {
 							sbits[92] = 0; //10
 							sbits[93] = 1; //11
 						}else {
-							System.out.println("Error");
+							System.out.println("Error3");
 							System.exit(0);
 						}
 					}
@@ -415,7 +415,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = (float)xValue/(float)1379963888;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[94] 	= 1; //1
 							sbits[95] 	= 0; //2
 							sbits[96] 	= 0; //3
@@ -426,7 +426,7 @@ public class bitvector2image {
 							sbits[101] 	= 0; //8
 							sbits[102] 	= 0; //9
 							sbits[103] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[94] 	= 0; //1
 							sbits[95] 	= 1; //2
 							sbits[96] 	= 0; //3
@@ -437,7 +437,7 @@ public class bitvector2image {
 							sbits[101] 	= 0; //8
 							sbits[102] 	= 0; //9
 							sbits[103] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[94] 	= 0; //1
 							sbits[95] 	= 0; //2
 							sbits[96] 	= 1; //3
@@ -448,7 +448,7 @@ public class bitvector2image {
 							sbits[101] 	= 0; //8
 							sbits[102] 	= 0; //9
 							sbits[103] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[94] 	= 0; //1
 							sbits[95] 	= 0; //2
 							sbits[96] 	= 0; //3
@@ -459,7 +459,7 @@ public class bitvector2image {
 							sbits[101] 	= 0; //8
 							sbits[102] 	= 0; //9
 							sbits[103] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[94] 	= 0; //1
 							sbits[95] 	= 0; //2
 							sbits[96] 	= 0; //3
@@ -470,7 +470,7 @@ public class bitvector2image {
 							sbits[101] 	= 0; //8
 							sbits[102] 	= 0; //9
 							sbits[103] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[94] 	= 0; //1
 							sbits[95] 	= 0; //2
 							sbits[96] 	= 0; //3
@@ -481,7 +481,7 @@ public class bitvector2image {
 							sbits[101] 	= 0; //8
 							sbits[102] 	= 0; //9
 							sbits[103] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[94] 	= 0; //1
 							sbits[95] 	= 0; //2
 							sbits[96] 	= 0; //3
@@ -492,7 +492,7 @@ public class bitvector2image {
 							sbits[101] 	= 0; //8
 							sbits[102] 	= 0; //9
 							sbits[103] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[94] 	= 0; //1
 							sbits[95] 	= 0; //2
 							sbits[96] 	= 0; //3
@@ -503,7 +503,7 @@ public class bitvector2image {
 							sbits[101] 	= 1; //8
 							sbits[102] 	= 0; //9
 							sbits[103] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[94] 	= 0; //1
 							sbits[95] 	= 0; //2
 							sbits[96] 	= 0; //3
@@ -514,7 +514,7 @@ public class bitvector2image {
 							sbits[101] 	= 0; //8
 							sbits[102] 	= 1; //9
 							sbits[103] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[94] 	= 0; //1
 							sbits[95] 	= 0; //2
 							sbits[96] 	= 0; //3
@@ -526,7 +526,7 @@ public class bitvector2image {
 							sbits[102] 	= 0; //9
 							sbits[103] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error4");
 							System.exit(0);
 						}
 					}
@@ -538,7 +538,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = (float)xValue/(float)1309937401;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[104] 	= 1; //1
 							sbits[105] 	= 0; //2
 							sbits[106] 	= 0; //3
@@ -549,7 +549,7 @@ public class bitvector2image {
 							sbits[111] 	= 0; //8
 							sbits[112] 	= 0; //9
 							sbits[113] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[104] 	= 0; //1
 							sbits[105] 	= 1; //2
 							sbits[106] 	= 0; //3
@@ -560,7 +560,7 @@ public class bitvector2image {
 							sbits[111] 	= 0; //8
 							sbits[112] 	= 0; //9
 							sbits[113] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[104] 	= 0; //1
 							sbits[105] 	= 0; //2
 							sbits[106] 	= 1; //3
@@ -571,7 +571,7 @@ public class bitvector2image {
 							sbits[111] 	= 0; //8
 							sbits[112] 	= 0; //9
 							sbits[113] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[104] 	= 0; //1
 							sbits[105] 	= 0; //2
 							sbits[106] 	= 0; //3
@@ -582,7 +582,7 @@ public class bitvector2image {
 							sbits[111] 	= 0; //8
 							sbits[112] 	= 0; //9
 							sbits[113] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[104] 	= 0; //1
 							sbits[105] 	= 0; //2
 							sbits[106] 	= 0; //3
@@ -593,7 +593,7 @@ public class bitvector2image {
 							sbits[111] 	= 0; //8
 							sbits[112] 	= 0; //9
 							sbits[113] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[104] 	= 0; //1
 							sbits[105] 	= 0; //2
 							sbits[106] 	= 0; //3
@@ -604,7 +604,7 @@ public class bitvector2image {
 							sbits[111] 	= 0; //8
 							sbits[112] 	= 0; //9
 							sbits[113] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[104] 	= 0; //1
 							sbits[105] 	= 0; //2
 							sbits[106] 	= 0; //3
@@ -615,7 +615,7 @@ public class bitvector2image {
 							sbits[111] 	= 0; //8
 							sbits[112] 	= 0; //9
 							sbits[113] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[104] 	= 0; //1
 							sbits[105] 	= 0; //2
 							sbits[106] 	= 0; //3
@@ -626,7 +626,7 @@ public class bitvector2image {
 							sbits[111] 	= 1; //8
 							sbits[112] 	= 0; //9
 							sbits[113] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[104] 	= 0; //1
 							sbits[105] 	= 0; //2
 							sbits[106] 	= 0; //3
@@ -637,7 +637,7 @@ public class bitvector2image {
 							sbits[111] 	= 0; //8
 							sbits[112] 	= 1; //9
 							sbits[113] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[104] 	= 0; //1
 							sbits[105] 	= 0; //2
 							sbits[106] 	= 0; //3
@@ -649,7 +649,7 @@ public class bitvector2image {
 							sbits[112] 	= 0; //9
 							sbits[113] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error5");
 							System.exit(0);
 						}
 					}
@@ -660,7 +660,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/1;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[114] 	= 1; //1
 							sbits[115] 	= 0; //2
 							sbits[116] 	= 0; //3
@@ -671,7 +671,7 @@ public class bitvector2image {
 							sbits[121] 	= 0; //8
 							sbits[122] 	= 0; //9
 							sbits[123] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[114] 	= 0; //1
 							sbits[115] 	= 1; //2
 							sbits[116] 	= 0; //3
@@ -682,7 +682,7 @@ public class bitvector2image {
 							sbits[121] 	= 0; //8
 							sbits[122] 	= 0; //9
 							sbits[123] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[114] 	= 0; //1
 							sbits[115] 	= 0; //2
 							sbits[116] 	= 1; //3
@@ -693,7 +693,7 @@ public class bitvector2image {
 							sbits[121] 	= 0; //8
 							sbits[122] 	= 0; //9
 							sbits[123] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[114] 	= 0; //1
 							sbits[115] 	= 0; //2
 							sbits[116] 	= 0; //3
@@ -704,7 +704,7 @@ public class bitvector2image {
 							sbits[121] 	= 0; //8
 							sbits[122] 	= 0; //9
 							sbits[123] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[114] 	= 0; //1
 							sbits[115] 	= 0; //2
 							sbits[116] 	= 0; //3
@@ -715,7 +715,7 @@ public class bitvector2image {
 							sbits[121] 	= 0; //8
 							sbits[122] 	= 0; //9
 							sbits[123] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[114] 	= 0; //1
 							sbits[115] 	= 0; //2
 							sbits[116] 	= 0; //3
@@ -726,7 +726,7 @@ public class bitvector2image {
 							sbits[121] 	= 0; //8
 							sbits[122] 	= 0; //9
 							sbits[123] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[114] 	= 0; //1
 							sbits[115] 	= 0; //2
 							sbits[116] 	= 0; //3
@@ -737,7 +737,7 @@ public class bitvector2image {
 							sbits[121] 	= 0; //8
 							sbits[122] 	= 0; //9
 							sbits[123] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[114] 	= 0; //1
 							sbits[115] 	= 0; //2
 							sbits[116] 	= 0; //3
@@ -748,7 +748,7 @@ public class bitvector2image {
 							sbits[121] 	= 1; //8
 							sbits[122] 	= 0; //9
 							sbits[123] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[114] 	= 0; //1
 							sbits[115] 	= 0; //2
 							sbits[116] 	= 0; //3
@@ -759,7 +759,7 @@ public class bitvector2image {
 							sbits[121] 	= 0; //8
 							sbits[122] 	= 1; //9
 							sbits[123] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[114] 	= 0; //1
 							sbits[115] 	= 0; //2
 							sbits[116] 	= 0; //3
@@ -771,7 +771,7 @@ public class bitvector2image {
 							sbits[122] 	= 0; //9
 							sbits[123] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error6");
 							System.exit(0);
 						}
 					}
@@ -782,7 +782,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/3;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[124] 	= 1; //1
 							sbits[125] 	= 0; //2
 							sbits[126] 	= 0; //3
@@ -793,7 +793,7 @@ public class bitvector2image {
 							sbits[131] 	= 0; //8
 							sbits[132] 	= 0; //9
 							sbits[133] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[124] 	= 0; //1
 							sbits[125] 	= 1; //2
 							sbits[126] 	= 0; //3
@@ -804,7 +804,7 @@ public class bitvector2image {
 							sbits[131] 	= 0; //8
 							sbits[132] 	= 0; //9
 							sbits[133] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[124] 	= 0; //1
 							sbits[125] 	= 0; //2
 							sbits[126] 	= 1; //3
@@ -815,7 +815,7 @@ public class bitvector2image {
 							sbits[131] 	= 0; //8
 							sbits[132] 	= 0; //9
 							sbits[133] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[124] 	= 0; //1
 							sbits[125] 	= 0; //2
 							sbits[126] 	= 0; //3
@@ -826,7 +826,7 @@ public class bitvector2image {
 							sbits[131] 	= 0; //8
 							sbits[132] 	= 0; //9
 							sbits[133] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[124] 	= 0; //1
 							sbits[125] 	= 0; //2
 							sbits[126] 	= 0; //3
@@ -837,7 +837,7 @@ public class bitvector2image {
 							sbits[131] 	= 0; //8
 							sbits[132] 	= 0; //9
 							sbits[133] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[124] 	= 0; //1
 							sbits[125] 	= 0; //2
 							sbits[126] 	= 0; //3
@@ -848,7 +848,7 @@ public class bitvector2image {
 							sbits[131] 	= 0; //8
 							sbits[132] 	= 0; //9
 							sbits[133] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[124] 	= 0; //1
 							sbits[125] 	= 0; //2
 							sbits[126] 	= 0; //3
@@ -859,7 +859,7 @@ public class bitvector2image {
 							sbits[131] 	= 0; //8
 							sbits[132] 	= 0; //9
 							sbits[133] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[124] 	= 0; //1
 							sbits[125] 	= 0; //2
 							sbits[126] 	= 0; //3
@@ -870,7 +870,7 @@ public class bitvector2image {
 							sbits[131] 	= 1; //8
 							sbits[132] 	= 0; //9
 							sbits[133] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[124] 	= 0; //1
 							sbits[125] 	= 0; //2
 							sbits[126] 	= 0; //3
@@ -881,7 +881,7 @@ public class bitvector2image {
 							sbits[131] 	= 0; //8
 							sbits[132] 	= 1; //9
 							sbits[133] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[124] 	= 0; //1
 							sbits[125] 	= 0; //2
 							sbits[126] 	= 0; //3
@@ -893,7 +893,7 @@ public class bitvector2image {
 							sbits[132] 	= 0; //9
 							sbits[133] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error7");
 							System.exit(0);
 						}
 					}
@@ -905,7 +905,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/3;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[134] 	= 1; //1
 							sbits[135] 	= 0; //2
 							sbits[136] 	= 0; //3
@@ -916,7 +916,7 @@ public class bitvector2image {
 							sbits[141] 	= 0; //8
 							sbits[142] 	= 0; //9
 							sbits[143] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[134] 	= 0; //1
 							sbits[135] 	= 1; //2
 							sbits[136] 	= 0; //3
@@ -927,7 +927,7 @@ public class bitvector2image {
 							sbits[141] 	= 0; //8
 							sbits[142] 	= 0; //9
 							sbits[143] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[134] 	= 0; //1
 							sbits[135] 	= 0; //2
 							sbits[136] 	= 1; //3
@@ -938,7 +938,7 @@ public class bitvector2image {
 							sbits[141] 	= 0; //8
 							sbits[142] 	= 0; //9
 							sbits[143] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[134] 	= 0; //1
 							sbits[135] 	= 0; //2
 							sbits[136] 	= 0; //3
@@ -949,7 +949,7 @@ public class bitvector2image {
 							sbits[141] 	= 0; //8
 							sbits[142] 	= 0; //9
 							sbits[143] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[134] 	= 0; //1
 							sbits[135] 	= 0; //2
 							sbits[136] 	= 0; //3
@@ -960,7 +960,7 @@ public class bitvector2image {
 							sbits[141] 	= 0; //8
 							sbits[142] 	= 0; //9
 							sbits[143] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[134] 	= 0; //1
 							sbits[135] 	= 0; //2
 							sbits[136] 	= 0; //3
@@ -971,7 +971,7 @@ public class bitvector2image {
 							sbits[141] 	= 0; //8
 							sbits[142] 	= 0; //9
 							sbits[143] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[134] 	= 0; //1
 							sbits[135] 	= 0; //2
 							sbits[136] 	= 0; //3
@@ -982,7 +982,7 @@ public class bitvector2image {
 							sbits[141] 	= 0; //8
 							sbits[142] 	= 0; //9
 							sbits[143] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[134] 	= 0; //1
 							sbits[135] 	= 0; //2
 							sbits[136] 	= 0; //3
@@ -993,7 +993,7 @@ public class bitvector2image {
 							sbits[141] 	= 1; //8
 							sbits[142] 	= 0; //9
 							sbits[143] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[134] 	= 0; //1
 							sbits[135] 	= 0; //2
 							sbits[136] 	= 0; //3
@@ -1004,7 +1004,7 @@ public class bitvector2image {
 							sbits[141] 	= 0; //8
 							sbits[142] 	= 1; //9
 							sbits[143] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[134] 	= 0; //1
 							sbits[135] 	= 0; //2
 							sbits[136] 	= 0; //3
@@ -1016,7 +1016,7 @@ public class bitvector2image {
 							sbits[142] 	= 0; //9
 							sbits[143] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error8");
 							System.exit(0);
 						}
 					}
@@ -1028,7 +1028,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/77;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[144] 	= 1; //1
 							sbits[145] 	= 0; //2
 							sbits[146] 	= 0; //3
@@ -1039,7 +1039,7 @@ public class bitvector2image {
 							sbits[151] 	= 0; //8
 							sbits[152] 	= 0; //9
 							sbits[153] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[144] 	= 0; //1
 							sbits[145] 	= 1; //2
 							sbits[146] 	= 0; //3
@@ -1050,7 +1050,7 @@ public class bitvector2image {
 							sbits[151] 	= 0; //8
 							sbits[152] 	= 0; //9
 							sbits[153] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[144] 	= 0; //1
 							sbits[145] 	= 0; //2
 							sbits[146] 	= 1; //3
@@ -1061,7 +1061,7 @@ public class bitvector2image {
 							sbits[151] 	= 0; //8
 							sbits[152] 	= 0; //9
 							sbits[153] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[144] 	= 0; //1
 							sbits[145] 	= 0; //2
 							sbits[146] 	= 0; //3
@@ -1072,7 +1072,7 @@ public class bitvector2image {
 							sbits[151] 	= 0; //8
 							sbits[152] 	= 0; //9
 							sbits[153] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[144] 	= 0; //1
 							sbits[145] 	= 0; //2
 							sbits[146] 	= 0; //3
@@ -1083,7 +1083,7 @@ public class bitvector2image {
 							sbits[151] 	= 0; //8
 							sbits[152] 	= 0; //9
 							sbits[153] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[144] 	= 0; //1
 							sbits[145] 	= 0; //2
 							sbits[146] 	= 0; //3
@@ -1094,7 +1094,7 @@ public class bitvector2image {
 							sbits[151] 	= 0; //8
 							sbits[152] 	= 0; //9
 							sbits[153] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[144] 	= 0; //1
 							sbits[145] 	= 0; //2
 							sbits[146] 	= 0; //3
@@ -1105,7 +1105,7 @@ public class bitvector2image {
 							sbits[151] 	= 0; //8
 							sbits[152] 	= 0; //9
 							sbits[153] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[144] 	= 0; //1
 							sbits[145] 	= 0; //2
 							sbits[146] 	= 0; //3
@@ -1116,7 +1116,7 @@ public class bitvector2image {
 							sbits[151] 	= 1; //8
 							sbits[152] 	= 0; //9
 							sbits[153] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[144] 	= 0; //1
 							sbits[145] 	= 0; //2
 							sbits[146] 	= 0; //3
@@ -1127,7 +1127,7 @@ public class bitvector2image {
 							sbits[151] 	= 0; //8
 							sbits[152] 	= 1; //9
 							sbits[153] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[144] 	= 0; //1
 							sbits[145] 	= 0; //2
 							sbits[146] 	= 0; //3
@@ -1139,7 +1139,7 @@ public class bitvector2image {
 							sbits[152] 	= 0; //9
 							sbits[153] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error9");
 							System.exit(0);
 						}
 					}
@@ -1151,7 +1151,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/5;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[154] 	= 1; //1
 							sbits[155] 	= 0; //2
 							sbits[156] 	= 0; //3
@@ -1162,7 +1162,7 @@ public class bitvector2image {
 							sbits[161] 	= 0; //8
 							sbits[162] 	= 0; //9
 							sbits[163] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[154] 	= 0; //1
 							sbits[155] 	= 1; //2
 							sbits[156] 	= 0; //3
@@ -1173,7 +1173,7 @@ public class bitvector2image {
 							sbits[161] 	= 0; //8
 							sbits[162] 	= 0; //9
 							sbits[163] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[154] 	= 0; //1
 							sbits[155] 	= 0; //2
 							sbits[156] 	= 1; //3
@@ -1184,7 +1184,7 @@ public class bitvector2image {
 							sbits[161] 	= 0; //8
 							sbits[162] 	= 0; //9
 							sbits[163] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[154] 	= 0; //1
 							sbits[155] 	= 0; //2
 							sbits[156] 	= 0; //3
@@ -1195,7 +1195,7 @@ public class bitvector2image {
 							sbits[161] 	= 0; //8
 							sbits[162] 	= 0; //9
 							sbits[163] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[154] 	= 0; //1
 							sbits[155] 	= 0; //2
 							sbits[156] 	= 0; //3
@@ -1206,7 +1206,7 @@ public class bitvector2image {
 							sbits[161] 	= 0; //8
 							sbits[162] 	= 0; //9
 							sbits[163] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[154] 	= 0; //1
 							sbits[155] 	= 0; //2
 							sbits[156] 	= 0; //3
@@ -1217,7 +1217,7 @@ public class bitvector2image {
 							sbits[161] 	= 0; //8
 							sbits[162] 	= 0; //9
 							sbits[163] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[154] 	= 0; //1
 							sbits[155] 	= 0; //2
 							sbits[156] 	= 0; //3
@@ -1228,7 +1228,7 @@ public class bitvector2image {
 							sbits[161] 	= 0; //8
 							sbits[162] 	= 0; //9
 							sbits[163] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[154] 	= 0; //1
 							sbits[155] 	= 0; //2
 							sbits[156] 	= 0; //3
@@ -1239,7 +1239,7 @@ public class bitvector2image {
 							sbits[161] 	= 1; //8
 							sbits[162] 	= 0; //9
 							sbits[163] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[154] 	= 0; //1
 							sbits[155] 	= 0; //2
 							sbits[156] 	= 0; //3
@@ -1250,7 +1250,7 @@ public class bitvector2image {
 							sbits[161] 	= 0; //8
 							sbits[162] 	= 1; //9
 							sbits[163] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[154] 	= 0; //1
 							sbits[155] 	= 0; //2
 							sbits[156] 	= 0; //3
@@ -1262,7 +1262,7 @@ public class bitvector2image {
 							sbits[162] 	= 0; //9
 							sbits[163] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error10");
 							System.exit(0);
 						}
 					}
@@ -1275,7 +1275,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/1;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[164] 	= 1; //1
 							sbits[165] 	= 0; //2
 							sbits[166] 	= 0; //3
@@ -1286,7 +1286,7 @@ public class bitvector2image {
 							sbits[171] 	= 0; //8
 							sbits[172] 	= 0; //9
 							sbits[173] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[164] 	= 0; //1
 							sbits[165] 	= 1; //2
 							sbits[166] 	= 0; //3
@@ -1297,7 +1297,7 @@ public class bitvector2image {
 							sbits[171] 	= 0; //8
 							sbits[172] 	= 0; //9
 							sbits[173] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[164] 	= 0; //1
 							sbits[165] 	= 0; //2
 							sbits[166] 	= 1; //3
@@ -1308,7 +1308,7 @@ public class bitvector2image {
 							sbits[171] 	= 0; //8
 							sbits[172] 	= 0; //9
 							sbits[173] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[164] 	= 0; //1
 							sbits[165] 	= 0; //2
 							sbits[166] 	= 0; //3
@@ -1319,7 +1319,7 @@ public class bitvector2image {
 							sbits[171] 	= 0; //8
 							sbits[172] 	= 0; //9
 							sbits[173] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[164] 	= 0; //1
 							sbits[165] 	= 0; //2
 							sbits[166] 	= 0; //3
@@ -1330,7 +1330,7 @@ public class bitvector2image {
 							sbits[171] 	= 0; //8
 							sbits[172] 	= 0; //9
 							sbits[173] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[164] 	= 0; //1
 							sbits[165] 	= 0; //2
 							sbits[166] 	= 0; //3
@@ -1341,7 +1341,7 @@ public class bitvector2image {
 							sbits[171] 	= 0; //8
 							sbits[172] 	= 0; //9
 							sbits[173] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[164] 	= 0; //1
 							sbits[165] 	= 0; //2
 							sbits[166] 	= 0; //3
@@ -1352,7 +1352,7 @@ public class bitvector2image {
 							sbits[171] 	= 0; //8
 							sbits[172] 	= 0; //9
 							sbits[173] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[164] 	= 0; //1
 							sbits[165] 	= 0; //2
 							sbits[166] 	= 0; //3
@@ -1363,7 +1363,7 @@ public class bitvector2image {
 							sbits[171] 	= 1; //8
 							sbits[172] 	= 0; //9
 							sbits[173] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[164] 	= 0; //1
 							sbits[165] 	= 0; //2
 							sbits[166] 	= 0; //3
@@ -1374,7 +1374,7 @@ public class bitvector2image {
 							sbits[171] 	= 0; //8
 							sbits[172] 	= 1; //9
 							sbits[173] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[164] 	= 0; //1
 							sbits[165] 	= 0; //2
 							sbits[166] 	= 0; //3
@@ -1386,7 +1386,7 @@ public class bitvector2image {
 							sbits[172] 	= 0; //9
 							sbits[173] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error11");
 							System.exit(0);
 						}
 					}
@@ -1399,7 +1399,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/7479;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[174] 	= 1; //1
 							sbits[175] 	= 0; //2
 							sbits[176] 	= 0; //3
@@ -1410,7 +1410,7 @@ public class bitvector2image {
 							sbits[181] 	= 0; //8
 							sbits[182] 	= 0; //9
 							sbits[183] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[174] 	= 0; //1
 							sbits[175] 	= 1; //2
 							sbits[176] 	= 0; //3
@@ -1421,7 +1421,7 @@ public class bitvector2image {
 							sbits[181] 	= 0; //8
 							sbits[182] 	= 0; //9
 							sbits[183] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[174] 	= 0; //1
 							sbits[175] 	= 0; //2
 							sbits[176] 	= 1; //3
@@ -1432,7 +1432,7 @@ public class bitvector2image {
 							sbits[181] 	= 0; //8
 							sbits[182] 	= 0; //9
 							sbits[183] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[174] 	= 0; //1
 							sbits[175] 	= 0; //2
 							sbits[176] 	= 0; //3
@@ -1443,7 +1443,7 @@ public class bitvector2image {
 							sbits[181] 	= 0; //8
 							sbits[182] 	= 0; //9
 							sbits[183] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[174] 	= 0; //1
 							sbits[175] 	= 0; //2
 							sbits[176] 	= 0; //3
@@ -1454,7 +1454,7 @@ public class bitvector2image {
 							sbits[181] 	= 0; //8
 							sbits[182] 	= 0; //9
 							sbits[183] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[174] 	= 0; //1
 							sbits[175] 	= 0; //2
 							sbits[176] 	= 0; //3
@@ -1465,7 +1465,7 @@ public class bitvector2image {
 							sbits[181] 	= 0; //8
 							sbits[182] 	= 0; //9
 							sbits[183] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[174] 	= 0; //1
 							sbits[175] 	= 0; //2
 							sbits[176] 	= 0; //3
@@ -1476,7 +1476,7 @@ public class bitvector2image {
 							sbits[181] 	= 0; //8
 							sbits[182] 	= 0; //9
 							sbits[183] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[174] 	= 0; //1
 							sbits[175] 	= 0; //2
 							sbits[176] 	= 0; //3
@@ -1487,7 +1487,7 @@ public class bitvector2image {
 							sbits[181] 	= 1; //8
 							sbits[182] 	= 0; //9
 							sbits[183] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[174] 	= 0; //1
 							sbits[175] 	= 0; //2
 							sbits[176] 	= 0; //3
@@ -1498,7 +1498,7 @@ public class bitvector2image {
 							sbits[181] 	= 0; //8
 							sbits[182] 	= 1; //9
 							sbits[183] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[174] 	= 0; //1
 							sbits[175] 	= 0; //2
 							sbits[176] 	= 0; //3
@@ -1510,7 +1510,7 @@ public class bitvector2image {
 							sbits[182] 	= 0; //9
 							sbits[183] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error12");
 							System.exit(0);
 						}
 					}
@@ -1523,7 +1523,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/1;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[184] 	= 1; //1
 							sbits[185] 	= 0; //2
 							sbits[186] 	= 0; //3
@@ -1534,7 +1534,7 @@ public class bitvector2image {
 							sbits[191] 	= 0; //8
 							sbits[192] 	= 0; //9
 							sbits[193] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[184] 	= 0; //1
 							sbits[185] 	= 1; //2
 							sbits[186] 	= 0; //3
@@ -1545,7 +1545,7 @@ public class bitvector2image {
 							sbits[191] 	= 0; //8
 							sbits[192] 	= 0; //9
 							sbits[193] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[184] 	= 0; //1
 							sbits[185] 	= 0; //2
 							sbits[186] 	= 1; //3
@@ -1556,7 +1556,7 @@ public class bitvector2image {
 							sbits[191] 	= 0; //8
 							sbits[192] 	= 0; //9
 							sbits[193] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[184] 	= 0; //1
 							sbits[185] 	= 0; //2
 							sbits[186] 	= 0; //3
@@ -1567,7 +1567,7 @@ public class bitvector2image {
 							sbits[191] 	= 0; //8
 							sbits[192] 	= 0; //9
 							sbits[193] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[184] 	= 0; //1
 							sbits[185] 	= 0; //2
 							sbits[186] 	= 0; //3
@@ -1578,7 +1578,7 @@ public class bitvector2image {
 							sbits[191] 	= 0; //8
 							sbits[192] 	= 0; //9
 							sbits[193] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[184] 	= 0; //1
 							sbits[185] 	= 0; //2
 							sbits[186] 	= 0; //3
@@ -1589,7 +1589,7 @@ public class bitvector2image {
 							sbits[191] 	= 0; //8
 							sbits[192] 	= 0; //9
 							sbits[193] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[184] 	= 0; //1
 							sbits[185] 	= 0; //2
 							sbits[186] 	= 0; //3
@@ -1600,7 +1600,7 @@ public class bitvector2image {
 							sbits[191] 	= 0; //8
 							sbits[192] 	= 0; //9
 							sbits[193] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[184] 	= 0; //1
 							sbits[185] 	= 0; //2
 							sbits[186] 	= 0; //3
@@ -1611,7 +1611,7 @@ public class bitvector2image {
 							sbits[191] 	= 1; //8
 							sbits[192] 	= 0; //9
 							sbits[193] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[184] 	= 0; //1
 							sbits[185] 	= 0; //2
 							sbits[186] 	= 0; //3
@@ -1622,7 +1622,7 @@ public class bitvector2image {
 							sbits[191] 	= 0; //8
 							sbits[192] 	= 1; //9
 							sbits[193] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[184] 	= 0; //1
 							sbits[185] 	= 0; //2
 							sbits[186] 	= 0; //3
@@ -1634,7 +1634,7 @@ public class bitvector2image {
 							sbits[192] 	= 0; //9
 							sbits[193] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error13");
 							System.exit(0);
 						}
 					}
@@ -1647,7 +1647,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/2;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[194] 	= 1; //1
 							sbits[195] 	= 0; //2
 							sbits[196] 	= 0; //3
@@ -1658,7 +1658,7 @@ public class bitvector2image {
 							sbits[201] 	= 0; //8
 							sbits[202] 	= 0; //9
 							sbits[203] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[194] 	= 0; //1
 							sbits[195] 	= 1; //2
 							sbits[196] 	= 0; //3
@@ -1669,7 +1669,7 @@ public class bitvector2image {
 							sbits[201] 	= 0; //8
 							sbits[202] 	= 0; //9
 							sbits[203] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[194] 	= 0; //1
 							sbits[195] 	= 0; //2
 							sbits[196] 	= 1; //3
@@ -1680,7 +1680,7 @@ public class bitvector2image {
 							sbits[201] 	= 0; //8
 							sbits[202] 	= 0; //9
 							sbits[203] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[194] 	= 0; //1
 							sbits[195] 	= 0; //2
 							sbits[196] 	= 0; //3
@@ -1691,7 +1691,7 @@ public class bitvector2image {
 							sbits[201] 	= 0; //8
 							sbits[202] 	= 0; //9
 							sbits[203] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[194] 	= 0; //1
 							sbits[195] 	= 0; //2
 							sbits[196] 	= 0; //3
@@ -1702,7 +1702,7 @@ public class bitvector2image {
 							sbits[201] 	= 0; //8
 							sbits[202] 	= 0; //9
 							sbits[203] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[194] 	= 0; //1
 							sbits[195] 	= 0; //2
 							sbits[196] 	= 0; //3
@@ -1713,7 +1713,7 @@ public class bitvector2image {
 							sbits[201] 	= 0; //8
 							sbits[202] 	= 0; //9
 							sbits[203] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[194] 	= 0; //1
 							sbits[195] 	= 0; //2
 							sbits[196] 	= 0; //3
@@ -1724,7 +1724,7 @@ public class bitvector2image {
 							sbits[201] 	= 0; //8
 							sbits[202] 	= 0; //9
 							sbits[203] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[194] 	= 0; //1
 							sbits[195] 	= 0; //2
 							sbits[196] 	= 0; //3
@@ -1735,7 +1735,7 @@ public class bitvector2image {
 							sbits[201] 	= 1; //8
 							sbits[202] 	= 0; //9
 							sbits[203] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[194] 	= 0; //1
 							sbits[195] 	= 0; //2
 							sbits[196] 	= 0; //3
@@ -1746,7 +1746,7 @@ public class bitvector2image {
 							sbits[201] 	= 0; //8
 							sbits[202] 	= 1; //9
 							sbits[203] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[194] 	= 0; //1
 							sbits[195] 	= 0; //2
 							sbits[196] 	= 0; //3
@@ -1758,7 +1758,7 @@ public class bitvector2image {
 							sbits[202] 	= 0; //9
 							sbits[203] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error14");
 							System.exit(0);
 						}
 					}
@@ -1771,7 +1771,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/7468;
 						//System.out.print(newX);
-						if(newX < 0.1) {
+						if(newX <= 0.1) {
 							sbits[204] 	= 1; //1
 							sbits[205] 	= 0; //2
 							sbits[206] 	= 0; //3
@@ -1782,7 +1782,7 @@ public class bitvector2image {
 							sbits[211] 	= 0; //8
 							sbits[212] 	= 0; //9
 							sbits[213] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {
+						}else if(newX > 0.1 && newX <= 0.2) {
 							sbits[204] 	= 0; //1
 							sbits[205] 	= 1; //2
 							sbits[206] 	= 0; //3
@@ -1793,7 +1793,7 @@ public class bitvector2image {
 							sbits[211] 	= 0; //8
 							sbits[212] 	= 0; //9
 							sbits[213] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {
+						}else if(newX > 0.2 && newX <= 0.3) {
 							sbits[204] 	= 0; //1
 							sbits[205] 	= 0; //2
 							sbits[206] 	= 1; //3
@@ -1804,7 +1804,7 @@ public class bitvector2image {
 							sbits[211] 	= 0; //8
 							sbits[212] 	= 0; //9
 							sbits[213] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {
+						}else if(newX > 0.3 && newX <=0.4) {
 							sbits[204] 	= 0; //1
 							sbits[205] 	= 0; //2
 							sbits[206] 	= 0; //3
@@ -1815,7 +1815,7 @@ public class bitvector2image {
 							sbits[211] 	= 0; //8
 							sbits[212] 	= 0; //9
 							sbits[213] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {
+						}else if(newX > 0.4 && newX <=0.5) {
 							sbits[204] 	= 0; //1
 							sbits[205] 	= 0; //2
 							sbits[206] 	= 0; //3
@@ -1826,7 +1826,7 @@ public class bitvector2image {
 							sbits[211] 	= 0; //8
 							sbits[212] 	= 0; //9
 							sbits[213] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {
+						}else if(newX > 0.5 && newX <=0.6) {
 							sbits[204] 	= 0; //1
 							sbits[205] 	= 0; //2
 							sbits[206] 	= 0; //3
@@ -1837,7 +1837,7 @@ public class bitvector2image {
 							sbits[211] 	= 0; //8
 							sbits[212] 	= 0; //9
 							sbits[213] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {
+						}else if(newX > 0.6 && newX <=0.7) {
 							sbits[204] 	= 0; //1
 							sbits[205] 	= 0; //2
 							sbits[206] 	= 0; //3
@@ -1848,7 +1848,7 @@ public class bitvector2image {
 							sbits[211] 	= 0; //8
 							sbits[212] 	= 0; //9
 							sbits[213] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {
+						}else if(newX > 0.7 && newX <=0.8) {
 							sbits[204] 	= 0; //1
 							sbits[205] 	= 0; //2
 							sbits[206] 	= 0; //3
@@ -1859,7 +1859,7 @@ public class bitvector2image {
 							sbits[211] 	= 1; //8
 							sbits[212] 	= 0; //9
 							sbits[213] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {
+						}else if(newX > 0.8 && newX <=0.9) {
 							sbits[204] 	= 0; //1
 							sbits[205] 	= 0; //2
 							sbits[206] 	= 0; //3
@@ -1870,7 +1870,7 @@ public class bitvector2image {
 							sbits[211] 	= 0; //8
 							sbits[212] 	= 1; //9
 							sbits[213] 	= 0; //10
-						}else if(newX >= 0.9) {
+						}else if(newX > 0.9 && newX <= 1) {
 							sbits[204] 	= 0; //1
 							sbits[205] 	= 0; //2
 							sbits[206] 	= 0; //3
@@ -1882,7 +1882,7 @@ public class bitvector2image {
 							sbits[212] 	= 0; //9
 							sbits[213] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error15");
 							System.exit(0);
 						}
 					}
@@ -1895,7 +1895,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/43;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[214] 	= 1; //1
 							sbits[215] 	= 0; //2
 							sbits[216] 	= 0; //3
@@ -1906,7 +1906,7 @@ public class bitvector2image {
 							sbits[221] 	= 0; //8
 							sbits[222] 	= 0; //9
 							sbits[223] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[214] 	= 0; //1
 							sbits[215] 	= 1; //2
 							sbits[216] 	= 0; //3
@@ -1917,7 +1917,7 @@ public class bitvector2image {
 							sbits[221] 	= 0; //8
 							sbits[222] 	= 0; //9
 							sbits[223] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[214] 	= 0; //1
 							sbits[215] 	= 0; //2
 							sbits[216] 	= 1; //3
@@ -1928,7 +1928,7 @@ public class bitvector2image {
 							sbits[221] 	= 0; //8
 							sbits[222] 	= 0; //9
 							sbits[223] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[214] 	= 0; //1
 							sbits[215] 	= 0; //2
 							sbits[216] 	= 0; //3
@@ -1939,7 +1939,7 @@ public class bitvector2image {
 							sbits[221] 	= 0; //8
 							sbits[222] 	= 0; //9
 							sbits[223] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[214] 	= 0; //1
 							sbits[215] 	= 0; //2
 							sbits[216] 	= 0; //3
@@ -1950,7 +1950,7 @@ public class bitvector2image {
 							sbits[221] 	= 0; //8
 							sbits[222] 	= 0; //9
 							sbits[223] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[214] 	= 0; //1
 							sbits[215] 	= 0; //2
 							sbits[216] 	= 0; //3
@@ -1961,7 +1961,7 @@ public class bitvector2image {
 							sbits[221] 	= 0; //8
 							sbits[222] 	= 0; //9
 							sbits[223] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[214] 	= 0; //1
 							sbits[215] 	= 0; //2
 							sbits[216] 	= 0; //3
@@ -1972,7 +1972,7 @@ public class bitvector2image {
 							sbits[221] 	= 0; //8
 							sbits[222] 	= 0; //9
 							sbits[223] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[214] 	= 0; //1
 							sbits[215] 	= 0; //2
 							sbits[216] 	= 0; //3
@@ -1983,7 +1983,7 @@ public class bitvector2image {
 							sbits[221] 	= 1; //8
 							sbits[222] 	= 0; //9
 							sbits[223] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[214] 	= 0; //1
 							sbits[215] 	= 0; //2
 							sbits[216] 	= 0; //3
@@ -1994,7 +1994,7 @@ public class bitvector2image {
 							sbits[221] 	= 0; //8
 							sbits[222] 	= 1; //9
 							sbits[223] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[214] 	= 0; //1
 							sbits[215] 	= 0; //2
 							sbits[216] 	= 0; //3
@@ -2006,7 +2006,7 @@ public class bitvector2image {
 							sbits[222] 	= 0; //9
 							sbits[223] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error16");
 							System.exit(0);
 						}
 					}
@@ -2019,7 +2019,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/2;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[224] 	= 1; //1
 							sbits[225] 	= 0; //2
 							sbits[226] 	= 0; //3
@@ -2030,7 +2030,7 @@ public class bitvector2image {
 							sbits[231] 	= 0; //8
 							sbits[232] 	= 0; //9
 							sbits[233] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[224] 	= 0; //1
 							sbits[225] 	= 1; //2
 							sbits[226] 	= 0; //3
@@ -2041,7 +2041,7 @@ public class bitvector2image {
 							sbits[231] 	= 0; //8
 							sbits[232] 	= 0; //9
 							sbits[233] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[224] 	= 0; //1
 							sbits[225] 	= 0; //2
 							sbits[226] 	= 1; //3
@@ -2052,7 +2052,7 @@ public class bitvector2image {
 							sbits[231] 	= 0; //8
 							sbits[232] 	= 0; //9
 							sbits[233] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[224] 	= 0; //1
 							sbits[225] 	= 0; //2
 							sbits[226] 	= 0; //3
@@ -2063,7 +2063,7 @@ public class bitvector2image {
 							sbits[231] 	= 0; //8
 							sbits[232] 	= 0; //9
 							sbits[233] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[224] 	= 0; //1
 							sbits[225] 	= 0; //2
 							sbits[226] 	= 0; //3
@@ -2074,7 +2074,7 @@ public class bitvector2image {
 							sbits[231] 	= 0; //8
 							sbits[232] 	= 0; //9
 							sbits[233] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[224] 	= 0; //1
 							sbits[225] 	= 0; //2
 							sbits[226] 	= 0; //3
@@ -2085,7 +2085,7 @@ public class bitvector2image {
 							sbits[231] 	= 0; //8
 							sbits[232] 	= 0; //9
 							sbits[233] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[224] 	= 0; //1
 							sbits[225] 	= 0; //2
 							sbits[226] 	= 0; //3
@@ -2096,7 +2096,7 @@ public class bitvector2image {
 							sbits[231] 	= 0; //8
 							sbits[232] 	= 0; //9
 							sbits[233] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[224] 	= 0; //1
 							sbits[225] 	= 0; //2
 							sbits[226] 	= 0; //3
@@ -2107,7 +2107,7 @@ public class bitvector2image {
 							sbits[231] 	= 1; //8
 							sbits[232] 	= 0; //9
 							sbits[233] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[224] 	= 0; //1
 							sbits[225] 	= 0; //2
 							sbits[226] 	= 0; //3
@@ -2118,7 +2118,7 @@ public class bitvector2image {
 							sbits[231] 	= 0; //8
 							sbits[232] 	= 1; //9
 							sbits[233] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[224] 	= 0; //1
 							sbits[225] 	= 0; //2
 							sbits[226] 	= 0; //3
@@ -2130,7 +2130,7 @@ public class bitvector2image {
 							sbits[232] 	= 0; //9
 							sbits[233] 	= 1; //10
 						}else {
-							System.out.println("Error");
+							System.out.println("Error17");
 							System.exit(0);
 						}
 					}
@@ -2143,7 +2143,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/9;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[234] 	= 1; //1
 							sbits[235] 	= 0; //2
 							sbits[236] 	= 0; //3
@@ -2154,7 +2154,7 @@ public class bitvector2image {
 							sbits[241] 	= 0; //8
 							sbits[242] 	= 0; //9
 							sbits[243] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[234] 	= 0; //1
 							sbits[235] 	= 1; //2
 							sbits[236] 	= 0; //3
@@ -2165,7 +2165,7 @@ public class bitvector2image {
 							sbits[241] 	= 0; //8
 							sbits[242] 	= 0; //9
 							sbits[243] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[234] 	= 0; //1
 							sbits[235] 	= 0; //2
 							sbits[236] 	= 1; //3
@@ -2176,7 +2176,7 @@ public class bitvector2image {
 							sbits[241] 	= 0; //8
 							sbits[242] 	= 0; //9
 							sbits[243] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[234] 	= 0; //1
 							sbits[235] 	= 0; //2
 							sbits[236] 	= 0; //3
@@ -2187,7 +2187,7 @@ public class bitvector2image {
 							sbits[241] 	= 0; //8
 							sbits[242] 	= 0; //9
 							sbits[243] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[234] 	= 0; //1
 							sbits[235] 	= 0; //2
 							sbits[236] 	= 0; //3
@@ -2198,7 +2198,7 @@ public class bitvector2image {
 							sbits[241] 	= 0; //8
 							sbits[242] 	= 0; //9
 							sbits[243] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[234] 	= 0; //1
 							sbits[235] 	= 0; //2
 							sbits[236] 	= 0; //3
@@ -2209,7 +2209,7 @@ public class bitvector2image {
 							sbits[241] 	= 0; //8
 							sbits[242] 	= 0; //9
 							sbits[243] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[234] 	= 0; //1
 							sbits[235] 	= 0; //2
 							sbits[236] 	= 0; //3
@@ -2220,7 +2220,7 @@ public class bitvector2image {
 							sbits[241] 	= 0; //8
 							sbits[242] 	= 0; //9
 							sbits[243] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[234] 	= 0; //1
 							sbits[235] 	= 0; //2
 							sbits[236] 	= 0; //3
@@ -2231,7 +2231,7 @@ public class bitvector2image {
 							sbits[241] 	= 1; //8
 							sbits[242] 	= 0; //9
 							sbits[243] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[234] 	= 0; //1
 							sbits[235] 	= 0; //2
 							sbits[236] 	= 0; //3
@@ -2242,7 +2242,7 @@ public class bitvector2image {
 							sbits[241] 	= 0; //8
 							sbits[242] 	= 1; //9
 							sbits[243] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[234] 	= 0; //1
 							sbits[235] 	= 0; //2
 							sbits[236] 	= 0; //3
@@ -2254,7 +2254,7 @@ public class bitvector2image {
 							sbits[242] 	= 0; //9
 							sbits[243] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error18");	
 							System.exit(0);	
 						}
 					}
@@ -2306,7 +2306,7 @@ public class bitvector2image {
 							sbits[262] 	= 0; //9
 							sbits[263] 	= 1; //10
 						}else {
-							System.out.println("Error");	
+							System.out.println("Error20");	
 							System.exit(0);	
 						}
 					}
@@ -2341,7 +2341,7 @@ public class bitvector2image {
 							sbits[272] 	= 0; //9
 							sbits[273] 	= 1; //10
 						}else {
-							System.out.println("Error");	
+							System.out.println("Error21");	
 							System.exit(0);	
 						}	
 					}
@@ -2354,7 +2354,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/511;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[274] 	= 1; //1
 							sbits[275] 	= 0; //2
 							sbits[276] 	= 0; //3
@@ -2365,7 +2365,7 @@ public class bitvector2image {
 							sbits[281] 	= 0; //8
 							sbits[282] 	= 0; //9
 							sbits[283] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[274] 	= 0; //1
 							sbits[275] 	= 1; //2
 							sbits[276] 	= 0; //3
@@ -2376,7 +2376,7 @@ public class bitvector2image {
 							sbits[281] 	= 0; //8
 							sbits[282] 	= 0; //9
 							sbits[283] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[274] 	= 0; //1
 							sbits[275] 	= 0; //2
 							sbits[276] 	= 1; //3
@@ -2387,7 +2387,7 @@ public class bitvector2image {
 							sbits[281] 	= 0; //8
 							sbits[282] 	= 0; //9
 							sbits[283] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[274] 	= 0; //1
 							sbits[275] 	= 0; //2
 							sbits[276] 	= 0; //3
@@ -2398,7 +2398,7 @@ public class bitvector2image {
 							sbits[281] 	= 0; //8
 							sbits[282] 	= 0; //9
 							sbits[283] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[274] 	= 0; //1
 							sbits[275] 	= 0; //2
 							sbits[276] 	= 0; //3
@@ -2409,7 +2409,7 @@ public class bitvector2image {
 							sbits[281] 	= 0; //8
 							sbits[282] 	= 0; //9
 							sbits[283] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[274] 	= 0; //1
 							sbits[275] 	= 0; //2
 							sbits[276] 	= 0; //3
@@ -2420,7 +2420,7 @@ public class bitvector2image {
 							sbits[281] 	= 0; //8
 							sbits[282] 	= 0; //9
 							sbits[283] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[274] 	= 0; //1
 							sbits[275] 	= 0; //2
 							sbits[276] 	= 0; //3
@@ -2431,7 +2431,7 @@ public class bitvector2image {
 							sbits[281] 	= 0; //8
 							sbits[282] 	= 0; //9
 							sbits[283] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[274] 	= 0; //1
 							sbits[275] 	= 0; //2
 							sbits[276] 	= 0; //3
@@ -2442,7 +2442,7 @@ public class bitvector2image {
 							sbits[281] 	= 1; //8
 							sbits[282] 	= 0; //9
 							sbits[283] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[274] 	= 0; //1
 							sbits[275] 	= 0; //2
 							sbits[276] 	= 0; //3
@@ -2453,7 +2453,7 @@ public class bitvector2image {
 							sbits[281] 	= 0; //8
 							sbits[282] 	= 1; //9
 							sbits[283] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[274] 	= 0; //1
 							sbits[275] 	= 0; //2
 							sbits[276] 	= 0; //3
@@ -2465,7 +2465,7 @@ public class bitvector2image {
 							sbits[282] 	= 0; //9
 							sbits[283] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error22");	
 							System.exit(0);	
 						}
 					}
@@ -2478,7 +2478,7 @@ public class bitvector2image {
 						int xValue = Integer.parseInt(elephantList[i]);
 						float newX = xValue/511;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[284] 	= 1; //1
 							sbits[285] 	= 0; //2
 							sbits[286] 	= 0; //3
@@ -2489,7 +2489,7 @@ public class bitvector2image {
 							sbits[291] 	= 0; //8
 							sbits[292] 	= 0; //9
 							sbits[293] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[284] 	= 0; //1
 							sbits[285] 	= 1; //2
 							sbits[286] 	= 0; //3
@@ -2500,7 +2500,7 @@ public class bitvector2image {
 							sbits[291] 	= 0; //8
 							sbits[292] 	= 0; //9
 							sbits[293] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[284] 	= 0; //1
 							sbits[285] 	= 0; //2
 							sbits[286] 	= 1; //3
@@ -2511,7 +2511,7 @@ public class bitvector2image {
 							sbits[291] 	= 0; //8
 							sbits[292] 	= 0; //9
 							sbits[293] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[284] 	= 0; //1
 							sbits[285] 	= 0; //2
 							sbits[286] 	= 0; //3
@@ -2522,7 +2522,7 @@ public class bitvector2image {
 							sbits[291] 	= 0; //8
 							sbits[292] 	= 0; //9
 							sbits[293] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[284] 	= 0; //1
 							sbits[285] 	= 0; //2
 							sbits[286] 	= 0; //3
@@ -2533,7 +2533,7 @@ public class bitvector2image {
 							sbits[291] 	= 0; //8
 							sbits[292] 	= 0; //9
 							sbits[293] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[284] 	= 0; //1
 							sbits[285] 	= 0; //2
 							sbits[286] 	= 0; //3
@@ -2544,7 +2544,7 @@ public class bitvector2image {
 							sbits[291] 	= 0; //8
 							sbits[292] 	= 0; //9
 							sbits[293] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[284] 	= 0; //1
 							sbits[285] 	= 0; //2
 							sbits[286] 	= 0; //3
@@ -2555,7 +2555,7 @@ public class bitvector2image {
 							sbits[291] 	= 0; //8
 							sbits[292] 	= 0; //9
 							sbits[293] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[284] 	= 0; //1
 							sbits[285] 	= 0; //2
 							sbits[286] 	= 0; //3
@@ -2566,7 +2566,7 @@ public class bitvector2image {
 							sbits[291] 	= 1; //8
 							sbits[292] 	= 0; //9
 							sbits[293] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[284] 	= 0; //1
 							sbits[285] 	= 0; //2
 							sbits[286] 	= 0; //3
@@ -2577,7 +2577,7 @@ public class bitvector2image {
 							sbits[291] 	= 0; //8
 							sbits[292] 	= 1; //9
 							sbits[293] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[284] 	= 0; //1
 							sbits[285] 	= 0; //2
 							sbits[286] 	= 0; //3
@@ -2589,7 +2589,7 @@ public class bitvector2image {
 							sbits[292] 	= 0; //9
 							sbits[293] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error23");	
 							System.exit(0);	
 						}
 					}
@@ -2603,7 +2603,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[294] 	= 1; //1
 							sbits[295] 	= 0; //2
 							sbits[296] 	= 0; //3
@@ -2614,7 +2614,7 @@ public class bitvector2image {
 							sbits[301] 	= 0; //8
 							sbits[302] 	= 0; //9
 							sbits[303] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[294] 	= 0; //1
 							sbits[295] 	= 1; //2
 							sbits[296] 	= 0; //3
@@ -2625,7 +2625,7 @@ public class bitvector2image {
 							sbits[301] 	= 0; //8
 							sbits[302] 	= 0; //9
 							sbits[303] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[294] 	= 0; //1
 							sbits[295] 	= 0; //2
 							sbits[296] 	= 1; //3
@@ -2636,7 +2636,7 @@ public class bitvector2image {
 							sbits[301] 	= 0; //8
 							sbits[302] 	= 0; //9
 							sbits[303] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[294] 	= 0; //1
 							sbits[295] 	= 0; //2
 							sbits[296] 	= 0; //3
@@ -2647,7 +2647,7 @@ public class bitvector2image {
 							sbits[301] 	= 0; //8
 							sbits[302] 	= 0; //9
 							sbits[303] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[294] 	= 0; //1
 							sbits[295] 	= 0; //2
 							sbits[296] 	= 0; //3
@@ -2658,7 +2658,7 @@ public class bitvector2image {
 							sbits[301] 	= 0; //8
 							sbits[302] 	= 0; //9
 							sbits[303] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[294] 	= 0; //1
 							sbits[295] 	= 0; //2
 							sbits[296] 	= 0; //3
@@ -2669,7 +2669,7 @@ public class bitvector2image {
 							sbits[301] 	= 0; //8
 							sbits[302] 	= 0; //9
 							sbits[303] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[294] 	= 0; //1
 							sbits[295] 	= 0; //2
 							sbits[296] 	= 0; //3
@@ -2680,7 +2680,7 @@ public class bitvector2image {
 							sbits[301] 	= 0; //8
 							sbits[302] 	= 0; //9
 							sbits[303] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[294] 	= 0; //1
 							sbits[295] 	= 0; //2
 							sbits[296] 	= 0; //3
@@ -2691,7 +2691,7 @@ public class bitvector2image {
 							sbits[301] 	= 1; //8
 							sbits[302] 	= 0; //9
 							sbits[303] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[294] 	= 0; //1
 							sbits[295] 	= 0; //2
 							sbits[296] 	= 0; //3
@@ -2702,7 +2702,7 @@ public class bitvector2image {
 							sbits[301] 	= 0; //8
 							sbits[302] 	= 1; //9
 							sbits[303] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[294] 	= 0; //1
 							sbits[295] 	= 0; //2
 							sbits[296] 	= 0; //3
@@ -2714,7 +2714,7 @@ public class bitvector2image {
 							sbits[302] 	= 0; //9
 							sbits[303] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error24");	
 							System.exit(0);	
 						}
 					}
@@ -2728,7 +2728,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[304] 	= 1; //1
 							sbits[305] 	= 0; //2
 							sbits[306] 	= 0; //3
@@ -2739,7 +2739,7 @@ public class bitvector2image {
 							sbits[311] 	= 0; //8
 							sbits[312] 	= 0; //9
 							sbits[313] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[304] 	= 0; //1
 							sbits[305] 	= 1; //2
 							sbits[306] 	= 0; //3
@@ -2750,7 +2750,7 @@ public class bitvector2image {
 							sbits[311] 	= 0; //8
 							sbits[312] 	= 0; //9
 							sbits[313] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[304] 	= 0; //1
 							sbits[305] 	= 0; //2
 							sbits[306] 	= 1; //3
@@ -2761,7 +2761,7 @@ public class bitvector2image {
 							sbits[311] 	= 0; //8
 							sbits[312] 	= 0; //9
 							sbits[313] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[304] 	= 0; //1
 							sbits[305] 	= 0; //2
 							sbits[306] 	= 0; //3
@@ -2772,7 +2772,7 @@ public class bitvector2image {
 							sbits[311] 	= 0; //8
 							sbits[312] 	= 0; //9
 							sbits[313] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[304] 	= 0; //1
 							sbits[305] 	= 0; //2
 							sbits[306] 	= 0; //3
@@ -2783,7 +2783,7 @@ public class bitvector2image {
 							sbits[311] 	= 0; //8
 							sbits[312] 	= 0; //9
 							sbits[313] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[304] 	= 0; //1
 							sbits[305] 	= 0; //2
 							sbits[306] 	= 0; //3
@@ -2794,7 +2794,7 @@ public class bitvector2image {
 							sbits[311] 	= 0; //8
 							sbits[312] 	= 0; //9
 							sbits[313] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[304] 	= 0; //1
 							sbits[305] 	= 0; //2
 							sbits[306] 	= 0; //3
@@ -2805,7 +2805,7 @@ public class bitvector2image {
 							sbits[311] 	= 0; //8
 							sbits[312] 	= 0; //9
 							sbits[313] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[304] 	= 0; //1
 							sbits[305] 	= 0; //2
 							sbits[306] 	= 0; //3
@@ -2816,7 +2816,7 @@ public class bitvector2image {
 							sbits[311] 	= 1; //8
 							sbits[312] 	= 0; //9
 							sbits[313] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[304] 	= 0; //1
 							sbits[305] 	= 0; //2
 							sbits[306] 	= 0; //3
@@ -2827,7 +2827,7 @@ public class bitvector2image {
 							sbits[311] 	= 0; //8
 							sbits[312] 	= 1; //9
 							sbits[313] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[304] 	= 0; //1
 							sbits[305] 	= 0; //2
 							sbits[306] 	= 0; //3
@@ -2839,7 +2839,7 @@ public class bitvector2image {
 							sbits[312] 	= 0; //9
 							sbits[313] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error25");	
 							System.exit(0);	
 						}
 					}
@@ -2853,7 +2853,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[314] 	= 1; //1
 							sbits[315] 	= 0; //2
 							sbits[316] 	= 0; //3
@@ -2864,7 +2864,7 @@ public class bitvector2image {
 							sbits[321] 	= 0; //8
 							sbits[322] 	= 0; //9
 							sbits[323] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[314] 	= 0; //1
 							sbits[315] 	= 1; //2
 							sbits[316] 	= 0; //3
@@ -2875,7 +2875,7 @@ public class bitvector2image {
 							sbits[321] 	= 0; //8
 							sbits[322] 	= 0; //9
 							sbits[323] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[314] 	= 0; //1
 							sbits[315] 	= 0; //2
 							sbits[316] 	= 1; //3
@@ -2886,7 +2886,7 @@ public class bitvector2image {
 							sbits[321] 	= 0; //8
 							sbits[322] 	= 0; //9
 							sbits[323] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[314] 	= 0; //1
 							sbits[315] 	= 0; //2
 							sbits[316] 	= 0; //3
@@ -2897,7 +2897,7 @@ public class bitvector2image {
 							sbits[321] 	= 0; //8
 							sbits[322] 	= 0; //9
 							sbits[323] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[314] 	= 0; //1
 							sbits[315] 	= 0; //2
 							sbits[316] 	= 0; //3
@@ -2908,7 +2908,7 @@ public class bitvector2image {
 							sbits[321] 	= 0; //8
 							sbits[322] 	= 0; //9
 							sbits[323] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[314] 	= 0; //1
 							sbits[315] 	= 0; //2
 							sbits[316] 	= 0; //3
@@ -2919,7 +2919,7 @@ public class bitvector2image {
 							sbits[321] 	= 0; //8
 							sbits[322] 	= 0; //9
 							sbits[323] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[314] 	= 0; //1
 							sbits[315] 	= 0; //2
 							sbits[316] 	= 0; //3
@@ -2930,7 +2930,7 @@ public class bitvector2image {
 							sbits[321] 	= 0; //8
 							sbits[322] 	= 0; //9
 							sbits[323] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[314] 	= 0; //1
 							sbits[315] 	= 0; //2
 							sbits[316] 	= 0; //3
@@ -2941,7 +2941,7 @@ public class bitvector2image {
 							sbits[321] 	= 1; //8
 							sbits[322] 	= 0; //9
 							sbits[323] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[314] 	= 0; //1
 							sbits[315] 	= 0; //2
 							sbits[316] 	= 0; //3
@@ -2952,7 +2952,7 @@ public class bitvector2image {
 							sbits[321] 	= 0; //8
 							sbits[322] 	= 1; //9
 							sbits[323] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[314] 	= 0; //1
 							sbits[315] 	= 0; //2
 							sbits[316] 	= 0; //3
@@ -2964,7 +2964,7 @@ public class bitvector2image {
 							sbits[322] 	= 0; //9
 							sbits[323] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error26");	
 							System.exit(0);	
 						}
 					}
@@ -2978,7 +2978,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[324] 	= 1; //1
 							sbits[325] 	= 0; //2
 							sbits[326] 	= 0; //3
@@ -2989,7 +2989,7 @@ public class bitvector2image {
 							sbits[331] 	= 0; //8
 							sbits[332] 	= 0; //9
 							sbits[333] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[324] 	= 0; //1
 							sbits[325] 	= 1; //2
 							sbits[326] 	= 0; //3
@@ -3000,7 +3000,7 @@ public class bitvector2image {
 							sbits[331] 	= 0; //8
 							sbits[332] 	= 0; //9
 							sbits[333] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[324] 	= 0; //1
 							sbits[325] 	= 0; //2
 							sbits[326] 	= 1; //3
@@ -3011,7 +3011,7 @@ public class bitvector2image {
 							sbits[331] 	= 0; //8
 							sbits[332] 	= 0; //9
 							sbits[333] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[324] 	= 0; //1
 							sbits[325] 	= 0; //2
 							sbits[326] 	= 0; //3
@@ -3022,7 +3022,7 @@ public class bitvector2image {
 							sbits[331] 	= 0; //8
 							sbits[332] 	= 0; //9
 							sbits[333] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[324] 	= 0; //1
 							sbits[325] 	= 0; //2
 							sbits[326] 	= 0; //3
@@ -3033,7 +3033,7 @@ public class bitvector2image {
 							sbits[331] 	= 0; //8
 							sbits[332] 	= 0; //9
 							sbits[333] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[324] 	= 0; //1
 							sbits[325] 	= 0; //2
 							sbits[326] 	= 0; //3
@@ -3044,7 +3044,7 @@ public class bitvector2image {
 							sbits[331] 	= 0; //8
 							sbits[332] 	= 0; //9
 							sbits[333] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[324] 	= 0; //1
 							sbits[325] 	= 0; //2
 							sbits[326] 	= 0; //3
@@ -3055,7 +3055,7 @@ public class bitvector2image {
 							sbits[331] 	= 0; //8
 							sbits[332] 	= 0; //9
 							sbits[333] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[324] 	= 0; //1
 							sbits[325] 	= 0; //2
 							sbits[326] 	= 0; //3
@@ -3066,7 +3066,7 @@ public class bitvector2image {
 							sbits[331] 	= 1; //8
 							sbits[332] 	= 0; //9
 							sbits[333] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[324] 	= 0; //1
 							sbits[325] 	= 0; //2
 							sbits[326] 	= 0; //3
@@ -3077,7 +3077,7 @@ public class bitvector2image {
 							sbits[331] 	= 0; //8
 							sbits[332] 	= 1; //9
 							sbits[333] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[324] 	= 0; //1
 							sbits[325] 	= 0; //2
 							sbits[326] 	= 0; //3
@@ -3089,7 +3089,7 @@ public class bitvector2image {
 							sbits[332] 	= 0; //9
 							sbits[333] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error27");	
 							System.exit(0);	
 						}
 					}
@@ -3103,7 +3103,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[334] 	= 1; //1
 							sbits[335] 	= 0; //2
 							sbits[336] 	= 0; //3
@@ -3114,7 +3114,7 @@ public class bitvector2image {
 							sbits[341] 	= 0; //8
 							sbits[342] 	= 0; //9
 							sbits[343] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[334] 	= 0; //1
 							sbits[335] 	= 1; //2
 							sbits[336] 	= 0; //3
@@ -3125,7 +3125,7 @@ public class bitvector2image {
 							sbits[341] 	= 0; //8
 							sbits[342] 	= 0; //9
 							sbits[343] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[334] 	= 0; //1
 							sbits[335] 	= 0; //2
 							sbits[336] 	= 1; //3
@@ -3136,7 +3136,7 @@ public class bitvector2image {
 							sbits[341] 	= 0; //8
 							sbits[342] 	= 0; //9
 							sbits[343] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[334] 	= 0; //1
 							sbits[335] 	= 0; //2
 							sbits[336] 	= 0; //3
@@ -3147,7 +3147,7 @@ public class bitvector2image {
 							sbits[341] 	= 0; //8
 							sbits[342] 	= 0; //9
 							sbits[343] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[334] 	= 0; //1
 							sbits[335] 	= 0; //2
 							sbits[336] 	= 0; //3
@@ -3158,7 +3158,7 @@ public class bitvector2image {
 							sbits[341] 	= 0; //8
 							sbits[342] 	= 0; //9
 							sbits[343] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[334] 	= 0; //1
 							sbits[335] 	= 0; //2
 							sbits[336] 	= 0; //3
@@ -3169,7 +3169,7 @@ public class bitvector2image {
 							sbits[341] 	= 0; //8
 							sbits[342] 	= 0; //9
 							sbits[343] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[334] 	= 0; //1
 							sbits[335] 	= 0; //2
 							sbits[336] 	= 0; //3
@@ -3180,7 +3180,7 @@ public class bitvector2image {
 							sbits[341] 	= 0; //8
 							sbits[342] 	= 0; //9
 							sbits[343] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[334] 	= 0; //1
 							sbits[335] 	= 0; //2
 							sbits[336] 	= 0; //3
@@ -3191,7 +3191,7 @@ public class bitvector2image {
 							sbits[341] 	= 1; //8
 							sbits[342] 	= 0; //9
 							sbits[343] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[334] 	= 0; //1
 							sbits[335] 	= 0; //2
 							sbits[336] 	= 0; //3
@@ -3202,7 +3202,7 @@ public class bitvector2image {
 							sbits[341] 	= 0; //8
 							sbits[342] 	= 1; //9
 							sbits[343] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[334] 	= 0; //1
 							sbits[335] 	= 0; //2
 							sbits[336] 	= 0; //3
@@ -3214,7 +3214,7 @@ public class bitvector2image {
 							sbits[342] 	= 0; //9
 							sbits[343] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error28");	
 							System.exit(0);	
 						}
 					}
@@ -3228,7 +3228,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[344] 	= 1; //1
 							sbits[345] 	= 0; //2
 							sbits[346] 	= 0; //3
@@ -3239,7 +3239,7 @@ public class bitvector2image {
 							sbits[351] 	= 0; //8
 							sbits[352] 	= 0; //9
 							sbits[353] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[344] 	= 0; //1
 							sbits[345] 	= 1; //2
 							sbits[346] 	= 0; //3
@@ -3250,7 +3250,7 @@ public class bitvector2image {
 							sbits[351] 	= 0; //8
 							sbits[352] 	= 0; //9
 							sbits[353] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[344] 	= 0; //1
 							sbits[345] 	= 0; //2
 							sbits[346] 	= 1; //3
@@ -3261,7 +3261,7 @@ public class bitvector2image {
 							sbits[351] 	= 0; //8
 							sbits[352] 	= 0; //9
 							sbits[353] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[344] 	= 0; //1
 							sbits[345] 	= 0; //2
 							sbits[346] 	= 0; //3
@@ -3272,7 +3272,7 @@ public class bitvector2image {
 							sbits[351] 	= 0; //8
 							sbits[352] 	= 0; //9
 							sbits[353] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[344] 	= 0; //1
 							sbits[345] 	= 0; //2
 							sbits[346] 	= 0; //3
@@ -3283,7 +3283,7 @@ public class bitvector2image {
 							sbits[351] 	= 0; //8
 							sbits[352] 	= 0; //9
 							sbits[353] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[344] 	= 0; //1
 							sbits[345] 	= 0; //2
 							sbits[346] 	= 0; //3
@@ -3294,7 +3294,7 @@ public class bitvector2image {
 							sbits[351] 	= 0; //8
 							sbits[352] 	= 0; //9
 							sbits[353] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[344] 	= 0; //1
 							sbits[345] 	= 0; //2
 							sbits[346] 	= 0; //3
@@ -3305,7 +3305,7 @@ public class bitvector2image {
 							sbits[351] 	= 0; //8
 							sbits[352] 	= 0; //9
 							sbits[353] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[344] 	= 0; //1
 							sbits[345] 	= 0; //2
 							sbits[346] 	= 0; //3
@@ -3316,7 +3316,7 @@ public class bitvector2image {
 							sbits[351] 	= 1; //8
 							sbits[352] 	= 0; //9
 							sbits[353] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[344] 	= 0; //1
 							sbits[345] 	= 0; //2
 							sbits[346] 	= 0; //3
@@ -3327,7 +3327,7 @@ public class bitvector2image {
 							sbits[351] 	= 0; //8
 							sbits[352] 	= 1; //9
 							sbits[353] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[344] 	= 0; //1
 							sbits[345] 	= 0; //2
 							sbits[346] 	= 0; //3
@@ -3339,7 +3339,7 @@ public class bitvector2image {
 							sbits[352] 	= 0; //9
 							sbits[353] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error29");	
 							System.exit(0);	
 						}
 					}
@@ -3353,7 +3353,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[354] 	= 1; //1
 							sbits[355] 	= 0; //2
 							sbits[356] 	= 0; //3
@@ -3364,7 +3364,7 @@ public class bitvector2image {
 							sbits[361] 	= 0; //8
 							sbits[362] 	= 0; //9
 							sbits[363] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[354] 	= 0; //1
 							sbits[355] 	= 1; //2
 							sbits[356] 	= 0; //3
@@ -3375,7 +3375,7 @@ public class bitvector2image {
 							sbits[361] 	= 0; //8
 							sbits[362] 	= 0; //9
 							sbits[363] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[354] 	= 0; //1
 							sbits[355] 	= 0; //2
 							sbits[356] 	= 1; //3
@@ -3386,7 +3386,7 @@ public class bitvector2image {
 							sbits[361] 	= 0; //8
 							sbits[362] 	= 0; //9
 							sbits[363] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[354] 	= 0; //1
 							sbits[355] 	= 0; //2
 							sbits[356] 	= 0; //3
@@ -3397,7 +3397,7 @@ public class bitvector2image {
 							sbits[361] 	= 0; //8
 							sbits[362] 	= 0; //9
 							sbits[363] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[354] 	= 0; //1
 							sbits[355] 	= 0; //2
 							sbits[356] 	= 0; //3
@@ -3408,7 +3408,7 @@ public class bitvector2image {
 							sbits[361] 	= 0; //8
 							sbits[362] 	= 0; //9
 							sbits[363] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[354] 	= 0; //1
 							sbits[355] 	= 0; //2
 							sbits[356] 	= 0; //3
@@ -3419,7 +3419,7 @@ public class bitvector2image {
 							sbits[361] 	= 0; //8
 							sbits[362] 	= 0; //9
 							sbits[363] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[354] 	= 0; //1
 							sbits[355] 	= 0; //2
 							sbits[356] 	= 0; //3
@@ -3430,7 +3430,7 @@ public class bitvector2image {
 							sbits[361] 	= 0; //8
 							sbits[362] 	= 0; //9
 							sbits[363] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[354] 	= 0; //1
 							sbits[355] 	= 0; //2
 							sbits[356] 	= 0; //3
@@ -3441,7 +3441,7 @@ public class bitvector2image {
 							sbits[361] 	= 1; //8
 							sbits[362] 	= 0; //9
 							sbits[363] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[354] 	= 0; //1
 							sbits[355] 	= 0; //2
 							sbits[356] 	= 0; //3
@@ -3452,7 +3452,7 @@ public class bitvector2image {
 							sbits[361] 	= 0; //8
 							sbits[362] 	= 1; //9
 							sbits[363] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[354] 	= 0; //1
 							sbits[355] 	= 0; //2
 							sbits[356] 	= 0; //3
@@ -3464,7 +3464,7 @@ public class bitvector2image {
 							sbits[362] 	= 0; //9
 							sbits[363] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error30");	
 							System.exit(0);	
 						}
 					}
@@ -3478,7 +3478,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue/255;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[364] 	= 1; //1
 							sbits[365] 	= 0; //2
 							sbits[366] 	= 0; //3
@@ -3489,7 +3489,7 @@ public class bitvector2image {
 							sbits[371] 	= 0; //8
 							sbits[372] 	= 0; //9
 							sbits[373] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[364] 	= 0; //1
 							sbits[365] 	= 1; //2
 							sbits[366] 	= 0; //3
@@ -3500,7 +3500,7 @@ public class bitvector2image {
 							sbits[371] 	= 0; //8
 							sbits[372] 	= 0; //9
 							sbits[373] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[364] 	= 0; //1
 							sbits[365] 	= 0; //2
 							sbits[366] 	= 1; //3
@@ -3511,7 +3511,7 @@ public class bitvector2image {
 							sbits[371] 	= 0; //8
 							sbits[372] 	= 0; //9
 							sbits[373] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[364] 	= 0; //1
 							sbits[365] 	= 0; //2
 							sbits[366] 	= 0; //3
@@ -3522,7 +3522,7 @@ public class bitvector2image {
 							sbits[371] 	= 0; //8
 							sbits[372] 	= 0; //9
 							sbits[373] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[364] 	= 0; //1
 							sbits[365] 	= 0; //2
 							sbits[366] 	= 0; //3
@@ -3533,7 +3533,7 @@ public class bitvector2image {
 							sbits[371] 	= 0; //8
 							sbits[372] 	= 0; //9
 							sbits[373] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[364] 	= 0; //1
 							sbits[365] 	= 0; //2
 							sbits[366] 	= 0; //3
@@ -3544,7 +3544,7 @@ public class bitvector2image {
 							sbits[371] 	= 0; //8
 							sbits[372] 	= 0; //9
 							sbits[373] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[364] 	= 0; //1
 							sbits[365] 	= 0; //2
 							sbits[366] 	= 0; //3
@@ -3555,7 +3555,7 @@ public class bitvector2image {
 							sbits[371] 	= 0; //8
 							sbits[372] 	= 0; //9
 							sbits[373] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[364] 	= 0; //1
 							sbits[365] 	= 0; //2
 							sbits[366] 	= 0; //3
@@ -3566,7 +3566,7 @@ public class bitvector2image {
 							sbits[371] 	= 1; //8
 							sbits[372] 	= 0; //9
 							sbits[373] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[364] 	= 0; //1
 							sbits[365] 	= 0; //2
 							sbits[366] 	= 0; //3
@@ -3577,7 +3577,7 @@ public class bitvector2image {
 							sbits[371] 	= 0; //8
 							sbits[372] 	= 1; //9
 							sbits[373] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[364] 	= 0; //1
 							sbits[365] 	= 0; //2
 							sbits[366] 	= 0; //3
@@ -3589,7 +3589,7 @@ public class bitvector2image {
 							sbits[372] 	= 0; //9
 							sbits[373] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error31");	
 							System.exit(0);	
 						}
 					}
@@ -3603,7 +3603,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue/255;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[374] 	= 1; //1
 							sbits[375] 	= 0; //2
 							sbits[376] 	= 0; //3
@@ -3614,7 +3614,7 @@ public class bitvector2image {
 							sbits[381] 	= 0; //8
 							sbits[382] 	= 0; //9
 							sbits[383] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[374] 	= 0; //1
 							sbits[375] 	= 1; //2
 							sbits[376] 	= 0; //3
@@ -3625,7 +3625,7 @@ public class bitvector2image {
 							sbits[381] 	= 0; //8
 							sbits[382] 	= 0; //9
 							sbits[383] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[374] 	= 0; //1
 							sbits[375] 	= 0; //2
 							sbits[376] 	= 1; //3
@@ -3636,7 +3636,7 @@ public class bitvector2image {
 							sbits[381] 	= 0; //8
 							sbits[382] 	= 0; //9
 							sbits[383] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[374] 	= 0; //1
 							sbits[375] 	= 0; //2
 							sbits[376] 	= 0; //3
@@ -3647,7 +3647,7 @@ public class bitvector2image {
 							sbits[381] 	= 0; //8
 							sbits[382] 	= 0; //9
 							sbits[383] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[374] 	= 0; //1
 							sbits[375] 	= 0; //2
 							sbits[376] 	= 0; //3
@@ -3658,7 +3658,7 @@ public class bitvector2image {
 							sbits[381] 	= 0; //8
 							sbits[382] 	= 0; //9
 							sbits[383] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[374] 	= 0; //1
 							sbits[375] 	= 0; //2
 							sbits[376] 	= 0; //3
@@ -3669,7 +3669,7 @@ public class bitvector2image {
 							sbits[381] 	= 0; //8
 							sbits[382] 	= 0; //9
 							sbits[383] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[374] 	= 0; //1
 							sbits[375] 	= 0; //2
 							sbits[376] 	= 0; //3
@@ -3680,7 +3680,7 @@ public class bitvector2image {
 							sbits[381] 	= 0; //8
 							sbits[382] 	= 0; //9
 							sbits[383] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[374] 	= 0; //1
 							sbits[375] 	= 0; //2
 							sbits[376] 	= 0; //3
@@ -3691,7 +3691,7 @@ public class bitvector2image {
 							sbits[381] 	= 1; //8
 							sbits[382] 	= 0; //9
 							sbits[383] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[374] 	= 0; //1
 							sbits[375] 	= 0; //2
 							sbits[376] 	= 0; //3
@@ -3702,7 +3702,7 @@ public class bitvector2image {
 							sbits[381] 	= 0; //8
 							sbits[382] 	= 1; //9
 							sbits[383] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[374] 	= 0; //1
 							sbits[375] 	= 0; //2
 							sbits[376] 	= 0; //3
@@ -3714,7 +3714,7 @@ public class bitvector2image {
 							sbits[382] 	= 0; //9
 							sbits[383] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error32");	
 							System.exit(0);	
 						}
 					}
@@ -3728,7 +3728,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[384] 	= 1; //1
 							sbits[385] 	= 0; //2
 							sbits[386] 	= 0; //3
@@ -3739,7 +3739,7 @@ public class bitvector2image {
 							sbits[391] 	= 0; //8
 							sbits[392] 	= 0; //9
 							sbits[393] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[384] 	= 0; //1
 							sbits[385] 	= 1; //2
 							sbits[386] 	= 0; //3
@@ -3750,7 +3750,7 @@ public class bitvector2image {
 							sbits[391] 	= 0; //8
 							sbits[392] 	= 0; //9
 							sbits[393] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[384] 	= 0; //1
 							sbits[385] 	= 0; //2
 							sbits[386] 	= 1; //3
@@ -3761,7 +3761,7 @@ public class bitvector2image {
 							sbits[391] 	= 0; //8
 							sbits[392] 	= 0; //9
 							sbits[393] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[384] 	= 0; //1
 							sbits[385] 	= 0; //2
 							sbits[386] 	= 0; //3
@@ -3772,7 +3772,7 @@ public class bitvector2image {
 							sbits[391] 	= 0; //8
 							sbits[392] 	= 0; //9
 							sbits[393] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[384] 	= 0; //1
 							sbits[385] 	= 0; //2
 							sbits[386] 	= 0; //3
@@ -3783,7 +3783,7 @@ public class bitvector2image {
 							sbits[391] 	= 0; //8
 							sbits[392] 	= 0; //9
 							sbits[393] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[384] 	= 0; //1
 							sbits[385] 	= 0; //2
 							sbits[386] 	= 0; //3
@@ -3794,7 +3794,7 @@ public class bitvector2image {
 							sbits[391] 	= 0; //8
 							sbits[392] 	= 0; //9
 							sbits[393] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[384] 	= 0; //1
 							sbits[385] 	= 0; //2
 							sbits[386] 	= 0; //3
@@ -3805,7 +3805,7 @@ public class bitvector2image {
 							sbits[391] 	= 0; //8
 							sbits[392] 	= 0; //9
 							sbits[393] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[384] 	= 0; //1
 							sbits[385] 	= 0; //2
 							sbits[386] 	= 0; //3
@@ -3816,7 +3816,7 @@ public class bitvector2image {
 							sbits[391] 	= 1; //8
 							sbits[392] 	= 0; //9
 							sbits[393] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[384] 	= 0; //1
 							sbits[385] 	= 0; //2
 							sbits[386] 	= 0; //3
@@ -3827,7 +3827,7 @@ public class bitvector2image {
 							sbits[391] 	= 0; //8
 							sbits[392] 	= 1; //9
 							sbits[393] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[384] 	= 0; //1
 							sbits[385] 	= 0; //2
 							sbits[386] 	= 0; //3
@@ -3839,7 +3839,7 @@ public class bitvector2image {
 							sbits[392] 	= 0; //9
 							sbits[393] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error33");	
 							System.exit(0);	
 						}
 					}
@@ -3853,7 +3853,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[394] 	= 1; //1
 							sbits[395] 	= 0; //2
 							sbits[396] 	= 0; //3
@@ -3864,7 +3864,7 @@ public class bitvector2image {
 							sbits[401] 	= 0; //8
 							sbits[402] 	= 0; //9
 							sbits[403] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[394] 	= 0; //1
 							sbits[395] 	= 1; //2
 							sbits[396] 	= 0; //3
@@ -3875,7 +3875,7 @@ public class bitvector2image {
 							sbits[401] 	= 0; //8
 							sbits[402] 	= 0; //9
 							sbits[403] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[394] 	= 0; //1
 							sbits[395] 	= 0; //2
 							sbits[396] 	= 1; //3
@@ -3886,7 +3886,7 @@ public class bitvector2image {
 							sbits[401] 	= 0; //8
 							sbits[402] 	= 0; //9
 							sbits[403] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[394] 	= 0; //1
 							sbits[395] 	= 0; //2
 							sbits[396] 	= 0; //3
@@ -3897,7 +3897,7 @@ public class bitvector2image {
 							sbits[401] 	= 0; //8
 							sbits[402] 	= 0; //9
 							sbits[403] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[394] 	= 0; //1
 							sbits[395] 	= 0; //2
 							sbits[396] 	= 0; //3
@@ -3908,7 +3908,7 @@ public class bitvector2image {
 							sbits[401] 	= 0; //8
 							sbits[402] 	= 0; //9
 							sbits[403] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[394] 	= 0; //1
 							sbits[395] 	= 0; //2
 							sbits[396] 	= 0; //3
@@ -3919,7 +3919,7 @@ public class bitvector2image {
 							sbits[401] 	= 0; //8
 							sbits[402] 	= 0; //9
 							sbits[403] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[394] 	= 0; //1
 							sbits[395] 	= 0; //2
 							sbits[396] 	= 0; //3
@@ -3930,7 +3930,7 @@ public class bitvector2image {
 							sbits[401] 	= 0; //8
 							sbits[402] 	= 0; //9
 							sbits[403] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[394] 	= 0; //1
 							sbits[395] 	= 0; //2
 							sbits[396] 	= 0; //3
@@ -3941,7 +3941,7 @@ public class bitvector2image {
 							sbits[401] 	= 1; //8
 							sbits[402] 	= 0; //9
 							sbits[403] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[394] 	= 0; //1
 							sbits[395] 	= 0; //2
 							sbits[396] 	= 0; //3
@@ -3952,7 +3952,7 @@ public class bitvector2image {
 							sbits[401] 	= 0; //8
 							sbits[402] 	= 1; //9
 							sbits[403] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[394] 	= 0; //1
 							sbits[395] 	= 0; //2
 							sbits[396] 	= 0; //3
@@ -3964,7 +3964,7 @@ public class bitvector2image {
 							sbits[402] 	= 0; //9
 							sbits[403] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error34");	
 							System.exit(0);
 						}
 					}
@@ -3978,7 +3978,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[404] 	= 1; //1
 							sbits[405] 	= 0; //2
 							sbits[406] 	= 0; //3
@@ -3989,7 +3989,7 @@ public class bitvector2image {
 							sbits[411] 	= 0; //8
 							sbits[412] 	= 0; //9
 							sbits[413] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[404] 	= 0; //1
 							sbits[405] 	= 1; //2
 							sbits[406] 	= 0; //3
@@ -4000,7 +4000,7 @@ public class bitvector2image {
 							sbits[411] 	= 0; //8
 							sbits[412] 	= 0; //9
 							sbits[413] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[404] 	= 0; //1
 							sbits[405] 	= 0; //2
 							sbits[406] 	= 1; //3
@@ -4011,7 +4011,7 @@ public class bitvector2image {
 							sbits[411] 	= 0; //8
 							sbits[412] 	= 0; //9
 							sbits[413] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[404] 	= 0; //1
 							sbits[405] 	= 0; //2
 							sbits[406] 	= 0; //3
@@ -4022,7 +4022,7 @@ public class bitvector2image {
 							sbits[411] 	= 0; //8
 							sbits[412] 	= 0; //9
 							sbits[413] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[404] 	= 0; //1
 							sbits[405] 	= 0; //2
 							sbits[406] 	= 0; //3
@@ -4033,7 +4033,7 @@ public class bitvector2image {
 							sbits[411] 	= 0; //8
 							sbits[412] 	= 0; //9
 							sbits[413] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[404] 	= 0; //1
 							sbits[405] 	= 0; //2
 							sbits[406] 	= 0; //3
@@ -4044,7 +4044,7 @@ public class bitvector2image {
 							sbits[411] 	= 0; //8
 							sbits[412] 	= 0; //9
 							sbits[413] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[404] 	= 0; //1
 							sbits[405] 	= 0; //2
 							sbits[406] 	= 0; //3
@@ -4055,7 +4055,7 @@ public class bitvector2image {
 							sbits[411] 	= 0; //8
 							sbits[412] 	= 0; //9
 							sbits[413] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[404] 	= 0; //1
 							sbits[405] 	= 0; //2
 							sbits[406] 	= 0; //3
@@ -4066,7 +4066,7 @@ public class bitvector2image {
 							sbits[411] 	= 1; //8
 							sbits[412] 	= 0; //9
 							sbits[413] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[404] 	= 0; //1
 							sbits[405] 	= 0; //2
 							sbits[406] 	= 0; //3
@@ -4077,7 +4077,7 @@ public class bitvector2image {
 							sbits[411] 	= 0; //8
 							sbits[412] 	= 1; //9
 							sbits[413] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[404] 	= 0; //1
 							sbits[405] 	= 0; //2
 							sbits[406] 	= 0; //3
@@ -4089,7 +4089,7 @@ public class bitvector2image {
 							sbits[412] 	= 0; //9
 							sbits[413] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error35");	
 							System.exit(0);	
 						}
 					}
@@ -4103,7 +4103,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[414] 	= 1; //1
 							sbits[415] 	= 0; //2
 							sbits[416] 	= 0; //3
@@ -4114,7 +4114,7 @@ public class bitvector2image {
 							sbits[421] 	= 0; //8
 							sbits[422] 	= 0; //9
 							sbits[423] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[414] 	= 0; //1
 							sbits[415] 	= 1; //2
 							sbits[416] 	= 0; //3
@@ -4125,7 +4125,7 @@ public class bitvector2image {
 							sbits[421] 	= 0; //8
 							sbits[422] 	= 0; //9
 							sbits[423] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[414] 	= 0; //1
 							sbits[415] 	= 0; //2
 							sbits[416] 	= 1; //3
@@ -4136,7 +4136,7 @@ public class bitvector2image {
 							sbits[421] 	= 0; //8
 							sbits[422] 	= 0; //9
 							sbits[423] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[414] 	= 0; //1
 							sbits[415] 	= 0; //2
 							sbits[416] 	= 0; //3
@@ -4147,7 +4147,7 @@ public class bitvector2image {
 							sbits[421] 	= 0; //8
 							sbits[422] 	= 0; //9
 							sbits[423] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[414] 	= 0; //1
 							sbits[415] 	= 0; //2
 							sbits[416] 	= 0; //3
@@ -4158,7 +4158,7 @@ public class bitvector2image {
 							sbits[421] 	= 0; //8
 							sbits[422] 	= 0; //9
 							sbits[423] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[414] 	= 0; //1
 							sbits[415] 	= 0; //2
 							sbits[416] 	= 0; //3
@@ -4169,7 +4169,7 @@ public class bitvector2image {
 							sbits[421] 	= 0; //8
 							sbits[422] 	= 0; //9
 							sbits[423] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[414] 	= 0; //1
 							sbits[415] 	= 0; //2
 							sbits[416] 	= 0; //3
@@ -4180,7 +4180,7 @@ public class bitvector2image {
 							sbits[421] 	= 0; //8
 							sbits[422] 	= 0; //9
 							sbits[423] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[414] 	= 0; //1
 							sbits[415] 	= 0; //2
 							sbits[416] 	= 0; //3
@@ -4191,7 +4191,7 @@ public class bitvector2image {
 							sbits[421] 	= 1; //8
 							sbits[422] 	= 0; //9
 							sbits[423] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[414] 	= 0; //1
 							sbits[415] 	= 0; //2
 							sbits[416] 	= 0; //3
@@ -4202,7 +4202,7 @@ public class bitvector2image {
 							sbits[421] 	= 0; //8
 							sbits[422] 	= 1; //9
 							sbits[423] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[414] 	= 0; //1
 							sbits[415] 	= 0; //2
 							sbits[416] 	= 0; //3
@@ -4214,7 +4214,7 @@ public class bitvector2image {
 							sbits[422] 	= 0; //9
 							sbits[423] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error36");	
 							System.exit(0);	
 						}
 					}
@@ -4228,7 +4228,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[424] 	= 1; //1
 							sbits[425] 	= 0; //2
 							sbits[426] 	= 0; //3
@@ -4239,7 +4239,7 @@ public class bitvector2image {
 							sbits[431] 	= 0; //8
 							sbits[432] 	= 0; //9
 							sbits[433] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[424] 	= 0; //1
 							sbits[425] 	= 1; //2
 							sbits[426] 	= 0; //3
@@ -4250,7 +4250,7 @@ public class bitvector2image {
 							sbits[431] 	= 0; //8
 							sbits[432] 	= 0; //9
 							sbits[433] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[424] 	= 0; //1
 							sbits[425] 	= 0; //2
 							sbits[426] 	= 1; //3
@@ -4261,7 +4261,7 @@ public class bitvector2image {
 							sbits[431] 	= 0; //8
 							sbits[432] 	= 0; //9
 							sbits[433] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[424] 	= 0; //1
 							sbits[425] 	= 0; //2
 							sbits[426] 	= 0; //3
@@ -4272,7 +4272,7 @@ public class bitvector2image {
 							sbits[431] 	= 0; //8
 							sbits[432] 	= 0; //9
 							sbits[433] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[424] 	= 0; //1
 							sbits[425] 	= 0; //2
 							sbits[426] 	= 0; //3
@@ -4283,7 +4283,7 @@ public class bitvector2image {
 							sbits[431] 	= 0; //8
 							sbits[432] 	= 0; //9
 							sbits[433] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[424] 	= 0; //1
 							sbits[425] 	= 0; //2
 							sbits[426] 	= 0; //3
@@ -4294,7 +4294,7 @@ public class bitvector2image {
 							sbits[431] 	= 0; //8
 							sbits[432] 	= 0; //9
 							sbits[433] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[424] 	= 0; //1
 							sbits[425] 	= 0; //2
 							sbits[426] 	= 0; //3
@@ -4305,7 +4305,7 @@ public class bitvector2image {
 							sbits[431] 	= 0; //8
 							sbits[432] 	= 0; //9
 							sbits[433] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[424] 	= 0; //1
 							sbits[425] 	= 0; //2
 							sbits[426] 	= 0; //3
@@ -4316,7 +4316,7 @@ public class bitvector2image {
 							sbits[431] 	= 1; //8
 							sbits[432] 	= 0; //9
 							sbits[433] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[424] 	= 0; //1
 							sbits[425] 	= 0; //2
 							sbits[426] 	= 0; //3
@@ -4327,7 +4327,7 @@ public class bitvector2image {
 							sbits[431] 	= 0; //8
 							sbits[432] 	= 1; //9
 							sbits[433] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[424] 	= 0; //1
 							sbits[425] 	= 0; //2
 							sbits[426] 	= 0; //3
@@ -4339,7 +4339,7 @@ public class bitvector2image {
 							sbits[432] 	= 0; //9
 							sbits[433] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error37");	
 							System.exit(0);	
 						}
 					}
@@ -4353,7 +4353,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[434] 	= 1; //1
 							sbits[435] 	= 0; //2
 							sbits[436] 	= 0; //3
@@ -4364,7 +4364,7 @@ public class bitvector2image {
 							sbits[441] 	= 0; //8
 							sbits[442] 	= 0; //9
 							sbits[443] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[434] 	= 0; //1
 							sbits[435] 	= 1; //2
 							sbits[436] 	= 0; //3
@@ -4375,7 +4375,7 @@ public class bitvector2image {
 							sbits[441] 	= 0; //8
 							sbits[442] 	= 0; //9
 							sbits[443] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[434] 	= 0; //1
 							sbits[435] 	= 0; //2
 							sbits[436] 	= 1; //3
@@ -4386,7 +4386,7 @@ public class bitvector2image {
 							sbits[441] 	= 0; //8
 							sbits[442] 	= 0; //9
 							sbits[443] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[434] 	= 0; //1
 							sbits[435] 	= 0; //2
 							sbits[436] 	= 0; //3
@@ -4397,7 +4397,7 @@ public class bitvector2image {
 							sbits[441] 	= 0; //8
 							sbits[442] 	= 0; //9
 							sbits[443] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[434] 	= 0; //1
 							sbits[435] 	= 0; //2
 							sbits[436] 	= 0; //3
@@ -4408,7 +4408,7 @@ public class bitvector2image {
 							sbits[441] 	= 0; //8
 							sbits[442] 	= 0; //9
 							sbits[443] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[434] 	= 0; //1
 							sbits[435] 	= 0; //2
 							sbits[436] 	= 0; //3
@@ -4419,7 +4419,7 @@ public class bitvector2image {
 							sbits[441] 	= 0; //8
 							sbits[442] 	= 0; //9
 							sbits[443] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[434] 	= 0; //1
 							sbits[435] 	= 0; //2
 							sbits[436] 	= 0; //3
@@ -4430,7 +4430,7 @@ public class bitvector2image {
 							sbits[441] 	= 0; //8
 							sbits[442] 	= 0; //9
 							sbits[443] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[434] 	= 0; //1
 							sbits[435] 	= 0; //2
 							sbits[436] 	= 0; //3
@@ -4441,7 +4441,7 @@ public class bitvector2image {
 							sbits[441] 	= 1; //8
 							sbits[442] 	= 0; //9
 							sbits[443] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[434] 	= 0; //1
 							sbits[435] 	= 0; //2
 							sbits[436] 	= 0; //3
@@ -4452,7 +4452,7 @@ public class bitvector2image {
 							sbits[441] 	= 0; //8
 							sbits[442] 	= 1; //9
 							sbits[443] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[434] 	= 0; //1
 							sbits[435] 	= 0; //2
 							sbits[436] 	= 0; //3
@@ -4464,7 +4464,7 @@ public class bitvector2image {
 							sbits[442] 	= 0; //9
 							sbits[443] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error38");	
 							System.exit(0);	
 						}
 					}
@@ -4478,7 +4478,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[444] 	= 1; //1
 							sbits[445] 	= 0; //2
 							sbits[446] 	= 0; //3
@@ -4489,7 +4489,7 @@ public class bitvector2image {
 							sbits[451] 	= 0; //8
 							sbits[452] 	= 0; //9
 							sbits[453] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[444] 	= 0; //1
 							sbits[445] 	= 1; //2
 							sbits[446] 	= 0; //3
@@ -4500,7 +4500,7 @@ public class bitvector2image {
 							sbits[451] 	= 0; //8
 							sbits[452] 	= 0; //9
 							sbits[453] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[444] 	= 0; //1
 							sbits[445] 	= 0; //2
 							sbits[446] 	= 1; //3
@@ -4511,7 +4511,7 @@ public class bitvector2image {
 							sbits[451] 	= 0; //8
 							sbits[452] 	= 0; //9
 							sbits[453] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[444] 	= 0; //1
 							sbits[445] 	= 0; //2
 							sbits[446] 	= 0; //3
@@ -4522,7 +4522,7 @@ public class bitvector2image {
 							sbits[451] 	= 0; //8
 							sbits[452] 	= 0; //9
 							sbits[453] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[444] 	= 0; //1
 							sbits[445] 	= 0; //2
 							sbits[446] 	= 0; //3
@@ -4533,7 +4533,7 @@ public class bitvector2image {
 							sbits[451] 	= 0; //8
 							sbits[452] 	= 0; //9
 							sbits[453] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[444] 	= 0; //1
 							sbits[445] 	= 0; //2
 							sbits[446] 	= 0; //3
@@ -4544,7 +4544,7 @@ public class bitvector2image {
 							sbits[451] 	= 0; //8
 							sbits[452] 	= 0; //9
 							sbits[453] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[444] 	= 0; //1
 							sbits[445] 	= 0; //2
 							sbits[446] 	= 0; //3
@@ -4555,7 +4555,7 @@ public class bitvector2image {
 							sbits[451] 	= 0; //8
 							sbits[452] 	= 0; //9
 							sbits[453] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[444] 	= 0; //1
 							sbits[445] 	= 0; //2
 							sbits[446] 	= 0; //3
@@ -4566,7 +4566,7 @@ public class bitvector2image {
 							sbits[451] 	= 1; //8
 							sbits[452] 	= 0; //9
 							sbits[453] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[444] 	= 0; //1
 							sbits[445] 	= 0; //2
 							sbits[446] 	= 0; //3
@@ -4577,7 +4577,7 @@ public class bitvector2image {
 							sbits[451] 	= 0; //8
 							sbits[452] 	= 1; //9
 							sbits[453] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[444] 	= 0; //1
 							sbits[445] 	= 0; //2
 							sbits[446] 	= 0; //3
@@ -4589,7 +4589,7 @@ public class bitvector2image {
 							sbits[452] 	= 0; //9
 							sbits[453] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error39");	
 							System.exit(0);	
 						}
 					}
@@ -4603,7 +4603,7 @@ public class bitvector2image {
 						float xValue = Float.parseFloat(elephantList[i]);
 						float newX = xValue;
 						//System.out.print(newX);
-						if(newX < 0.1) {								
+						if(newX <= 0.1) {								
 							sbits[454] 	= 1; //1
 							sbits[455] 	= 0; //2
 							sbits[456] 	= 0; //3
@@ -4614,7 +4614,7 @@ public class bitvector2image {
 							sbits[461] 	= 0; //8
 							sbits[462] 	= 0; //9
 							sbits[463] 	= 0; //10
-						}else if(newX >= 0.1 && newX < 0.2) {		
+						}else if(newX > 0.1 && newX <= 0.2) {		
 							sbits[454] 	= 0; //1
 							sbits[455] 	= 1; //2
 							sbits[456] 	= 0; //3
@@ -4625,7 +4625,7 @@ public class bitvector2image {
 							sbits[461] 	= 0; //8
 							sbits[462] 	= 0; //9
 							sbits[463] 	= 0; //10
-						}else if(newX >= 0.2 && newX < 0.3) {		
+						}else if(newX > 0.2 && newX <= 0.3) {		
 							sbits[454] 	= 0; //1
 							sbits[455] 	= 0; //2
 							sbits[456] 	= 1; //3
@@ -4636,7 +4636,7 @@ public class bitvector2image {
 							sbits[461] 	= 0; //8
 							sbits[462] 	= 0; //9
 							sbits[463] 	= 0; //10
-						}else if(newX >= 0.3 && newX <0.4) {		
+						}else if(newX > 0.3 && newX <=0.4) {		
 							sbits[454] 	= 0; //1
 							sbits[455] 	= 0; //2
 							sbits[456] 	= 0; //3
@@ -4647,7 +4647,7 @@ public class bitvector2image {
 							sbits[461] 	= 0; //8
 							sbits[462] 	= 0; //9
 							sbits[463] 	= 0; //10
-						}else if(newX >= 0.4 && newX <0.5) {		
+						}else if(newX > 0.4 && newX <=0.5) {		
 							sbits[454] 	= 0; //1
 							sbits[455] 	= 0; //2
 							sbits[456] 	= 0; //3
@@ -4658,7 +4658,7 @@ public class bitvector2image {
 							sbits[461] 	= 0; //8
 							sbits[462] 	= 0; //9
 							sbits[463] 	= 0; //10
-						}else if(newX >= 0.5 && newX <0.6) {		
+						}else if(newX > 0.5 && newX <=0.6) {		
 							sbits[454] 	= 0; //1
 							sbits[455] 	= 0; //2
 							sbits[456] 	= 0; //3
@@ -4669,7 +4669,7 @@ public class bitvector2image {
 							sbits[461] 	= 0; //8
 							sbits[462] 	= 0; //9
 							sbits[463] 	= 0; //10
-						}else if(newX >= 0.6 && newX <0.7) {		
+						}else if(newX > 0.6 && newX <=0.7) {		
 							sbits[454] 	= 0; //1
 							sbits[455] 	= 0; //2
 							sbits[456] 	= 0; //3
@@ -4680,7 +4680,7 @@ public class bitvector2image {
 							sbits[461] 	= 0; //8
 							sbits[462] 	= 0; //9
 							sbits[463] 	= 0; //10
-						}else if(newX >= 0.7 && newX <0.8) {		
+						}else if(newX > 0.7 && newX <=0.8) {		
 							sbits[454] 	= 0; //1
 							sbits[455] 	= 0; //2
 							sbits[456] 	= 0; //3
@@ -4691,7 +4691,7 @@ public class bitvector2image {
 							sbits[461] 	= 1; //8
 							sbits[462] 	= 0; //9
 							sbits[463] 	= 0; //10
-						}else if(newX >= 0.8 && newX <0.9) {		
+						}else if(newX > 0.8 && newX <=0.9) {		
 							sbits[454] 	= 0; //1
 							sbits[455] 	= 0; //2
 							sbits[456] 	= 0; //3
@@ -4702,7 +4702,7 @@ public class bitvector2image {
 							sbits[461] 	= 0; //8
 							sbits[462] 	= 1; //9
 							sbits[463] 	= 0; //10
-						}else if(newX >= 0.9) {		
+						}else if(newX > 0.9 && newX <= 1) {		
 							sbits[454] 	= 0; //1
 							sbits[455] 	= 0; //2
 							sbits[456] 	= 0; //3
@@ -4714,7 +4714,7 @@ public class bitvector2image {
 							sbits[462] 	= 0; //9
 							sbits[463] 	= 1; //10
 						}else {		
-							System.out.println("Error");	
+							System.out.println("Error40");	
 							System.exit(0);	
 						}
 					}
